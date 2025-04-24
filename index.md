@@ -4,7 +4,7 @@ title: DIVER OSINT CTF
 ---
 
 <div align="center">
-<img src="assets/images/main_logo.png" alt="Logo" width="80%">
+<img src="images/main_logo.png" alt="Logo" width="80%">
 
 <b>DIVER OSINT CTF</b> is the real-world oriented OSINT CTF.<br>
 We provide country/region-neutral OSINT challenges.<br>
