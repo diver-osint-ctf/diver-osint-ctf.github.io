@@ -1,5 +1,4 @@
 ---
-layout: default
 title: DIVER OSINT CTF
 ---
 
