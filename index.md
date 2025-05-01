@@ -2,16 +2,20 @@
 title: DIVER OSINT CTF
 ---
 
-<div align="center">
+<div align="center" style="margin-bottom:20px;">
 <img src="images/main_logo.png" alt="Logo" width="80%">
 
+<p>
 <b>DIVER OSINT CTF</b> is the real-world oriented OSINT CTF.<br>
 We provide country/region-neutral OSINT challenges.<br>
 Challenges will be available in English and Japanese.<br>
+</p>
 
+<p>
 <b>DIVER OSINT CTF</b> は現実世界指向の OSINT CTF（OSINTのコンテスト）です。<br>
 国や地域、レベルを問わず、初心者から上級者まで様々な方々が取り組める問題を出題します。<br>
 出題言語は日本語・英語です。
+</p>
 </div>
 
 ## Upcoming CTF / 次回開催
@@ -34,6 +38,7 @@ Stay tuned with following our [X account](https://x.com/DIVER_OSINT_CTF) and joi
 
 ## Links
 
+* Twitter / X: [@diver-osint-ctf](https://github.com/diver-osint-ctf)
 * Twitter / X: [@DIVER_OSINT_CTF](https://x.com/DIVER_OSINT_CTF)
 * Discord Server: [DIVER OSINT CTF](https://discord.diverctf.org)
 * CTF Time: [DIVER OSINT CTF](https://ctftime.org/ctf/1111)
@@ -41,4 +46,6 @@ Stay tuned with following our [X account](https://x.com/DIVER_OSINT_CTF) and joi
 
 ## Contact
 
-公式XアカウントのDMからお問い合わせください。
+Contact us via our X account or Discord.
+
+公式XアカウントのDMあるいはDiscordからお問い合わせください。
