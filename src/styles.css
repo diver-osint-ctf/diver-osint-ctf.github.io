@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+
+@theme {
+  --color-diver-500: #003366;
+  --font-notosans-with-fallback:  "Noto Sans", "Noto Sans JP", sans-serif;
+}
+
+@layer base {
+  body{@apply bg-gray-500 text-gray-600;}
+  h1 { @apply text-3xl font-bold text-diver-500; }
+  h2 { @apply text-2xl font-semibold text-diver-500; }
+  h3 { @apply text-xl  font-medium   text-diver-500; }
+  a  { @apply text-sky-600 underline hover:no-underline; }
+}
