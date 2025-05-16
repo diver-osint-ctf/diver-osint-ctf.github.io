@@ -1,5 +1,7 @@
 # diverctf.org GH Pages
 
+**[diverctf.org](https://diverctf.org)**
+
 ## File Structure
 
 ```
