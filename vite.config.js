@@ -32,7 +32,7 @@ function generateHtmlString(body, cssFile) {
   <meta property="og:site_name" content="DIVER OSINT CTF" />
   <title>DIVER OSINT CTF</title>
 </head>
-<body class="min-h-screen bg-gray-100 font-notosans-with-fallback">
+<body class="min-h-screen bg-gray-100 font-notosans-with-fallback overflow-y-scroll">
 
   <header class="sticky top-0 bg-primary text-white bg-diver-500">
     <div class="container mx-auto px-4 md:px-10 lg:px-40 py-4 flex items-center justify-between">
