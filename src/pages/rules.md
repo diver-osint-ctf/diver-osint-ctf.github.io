@@ -55,17 +55,6 @@ Also, please be sure to **create one account per person**. For example, "a team 
 
 Only one account can be created per person. It is forbidden for one person to participate with more than one account.
 
-### ❌Violation of the limit on the number of participants / Discrepancy between number of members and number of accounts in a team
-
-It is forbidden to have more participants than the limit (six people) per team.
-For example, an action such as "registering six people, but actually having seven people solving the challanges" falls under this provision.
-
-Also, please be sure to **create one account per person**. For example, "a team of five members has only two accounts" is considered a violation.
-
-### ❌Multiple accounts
-
-Only one account can be created per person. It is forbidden for one person to participate with more than one account.
-
 ### ❌Contact with individuals, organisations, etc. appearing in the challenges.
 
 You will have to deal with real public information during the competition and you will see people and organisations that exist in the real world, not just fictional ones. You must not contact any person or organisation by social networking, email, phone, visit or any other means.
@@ -210,17 +199,6 @@ CTFの問題サーバに対するアクセスは、Webブラウザから手動�
 CTFの問題サーバ上で使用するあらゆる個人アカウントのパスワードを公開することは禁止します。
 
 **チームのパスワード**についてはオンライン（Discordなど）でメンバーを募る時に公開しても問題ありません。ただし、チーム内で1人でもルール違反を行った場合、チーム全体がBANされるリスクがあることに注意してください。一度招待したユーザはチームから削除できません。可能な限り、信頼できるメンバーを個別に招待することを推奨します。
-
-### ❌参加人数制限の違反 / メンバー人数とアカウント数の不一致
-
-1チームあたりの制限人数（6名）を超える人数の参加は禁止されています。
-例えば「6名を登録し、実際には7名で問題を解く」といった行為はこの規定に該当します。
-
-また、必ず **1人あたり1つのアカウントを作成してください**。たとえば、「5人でチームを組んでいるのに、2人分のアカウントしかない」といった行為は違反とみなします。
-
-### ❌複数アカウントの作成
-
-作成できるのは1人あたり1アカウント（個人アカウント）です。たとえば、1人が2つ以上の個人アカウントを持って参加することは禁止されています。
 
 ### ❌参加人数制限の違反 / メンバー人数とアカウント数の不一致
 
