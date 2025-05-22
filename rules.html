@@ -1,0 +1,277 @@
+<!doctype html><html>
+<head>  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/main-BfVtAm_I.css">
+  <script type="module" src="/src/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <meta property="og:title" content="DIVER OSINT CTF" />
+  <meta property="og:description"
+    content="DIVER OSINT CTF is a real-world oriented OSINT CTF. / DIVER OSINT CTF は現実世界指向の OSINT CTF（OSINTのコンテスト）です。" />
+  <meta property="og:url" content="https://diverctf.org/" />
+  <meta property="og:image" content="https://diverctf.org/ogp.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DIVER OSINT CTF" />
+  <title>DIVER OSINT CTF</title>
+</head>
+<body class="min-h-screen bg-gray-100 font-notosans-with-fallback">
+
+  <header class="sticky top-0 bg-primary text-white bg-diver-500">
+    <div class="container mx-auto px-4 md:px-10 lg:px-40 py-4 flex items-center justify-between">
+      <a href="/" class="flex-shrink-0">
+        <img src="./logo_circle.png" alt="DIVER OSINT CTF Logo" class="h-10 mx-auto md:mx-0">
+      </a>
+
+      <nav class="hidden md:flex space-x-6"> <!--PC Nav-->
+        <a href="https://github.com/diver-osint-ctf/writeups"
+          class="hover:text-blue-300 text-white no-underline">Archives (writeup)</a>
+        <a href="/rules.html" class="hover:text-blue-300 text-white no-underline">CTF Rules</a>
+        <a href="https://x.com/DIVER_OSINT_CTF" target="_blank" rel="noopener" class="hover:text-blue-300 text-white">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://github.com/diver-osint-ctf" target="_blank" rel="noopener"
+          class="hover:text-blue-300 text-white">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+        <a href="https://discord.diverctf.org/" target="_blank" rel="noopener" class="hover:text-blue-300 text-white">
+          <i class="fab fa-discord fa-lg"></i>
+        </a>
+      </nav>
+
+      <div class="md:hidden"> <!--Mobile Icon-->
+        <button id="nav-toggle" class="focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobile-menu" class="hidden bg-primary md:hidden"> <!--Mobile Nav-->
+      <div class="px-4 pb-4 flex flex-col space-y-2">
+        <a href="https://github.com/diver-osint-ctf/writeups"
+          class="hover:text-gray-300 text-white no-underline">Archives (writeup)</a>
+        <a href="/rules.html" class="hover:text-gray-300 text-white no-underline">CTF Rules</a>
+        <div class="flex space-x-4 pt-2">
+          <a href="https://x.com/DIVER_OSINT_CTF" target="_blank" rel="noopener" class="hover:text-gray-300 text-white">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://github.com/diver-osint-ctf" target="_blank" rel="noopener"
+            class="hover:text-gray-300 text-white">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://discord.diverctf.org/" target="_blank" rel="noopener" class="hover:text-gray-300 text-white">
+            <i class="fab fa-discord fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container mx-auto px-4 lg:px-40 xl:px-60 py-8">
+       <h1>Competition Rules and Regulations [英語 / ENGLISH]</h1>
+<p><strong>日本語版は英語版の下にあります</strong>。 / Japanese follows English version.</p>
+<h2>CTF Overview / Rules</h2>
+<ul>
+<li>The event will take place from <strong>2025 June 7th (Sat) 03:00 UTC - June 8th (Sun) 03:00 UTC</strong> (24hrs).</li>
+<li><strong>Up to 6 participants per team</strong> are allowed.</li>
+<li>The CTF will be held online and Jeopardy style.</li>
+<li>You can see all challenges after you agree with the rules and submit flag of the &quot;welcome&quot; challenge.</li>
+<li>You can answer the challenges in any order. However, some challenges may use information from other challenge(s).</li>
+<li>The score for each challenge is dynamic; it will be varied from the number of correct answers given by all participants.</li>
+<li>Basically, all challenges can be solved with information available from free tools and websites. However, this does not prohibit the use of paid tools.</li>
+<li>During the competition, all communication will take place on Discord. <strong>Please make sure to join the Discord server.</strong> If the administrators cannot contact your team, your score may be invalidated.</li>
+<li>If an offence is identified, the player or team in charge will be subject to disciplinary action, including disqualification and point deductions.</li>
+<li>By registering your account on this CTF server (CTFd), you agree to the rules and regulations.</li>
+</ul>
+<h2>Prohibitions</h2>
+<h3>❌Attacks or interference with other players or administrators</h3>
+<p>You must not harass, attack, obstruct, threaten or do doxxing other players or operators in any way.</p>
+<p>Also, in all challanges, you can't get flags from other players or administrators.</p>
+<h3>❌Attacks and hacking against CTF servers and accounts</h3>
+<p>All Flags in this competition can be obtained from publicly available information.
+Attacks against the CTF server and various accounts are prohibited. Attempts to reset passwords, attempt to suspend account, etc. also fall under prohibited activities.</p>
+<p>Also flag submissions through attacks/hacking may be deemed invalid.</p>
+<p>If you are unsure whether your solution constitutes an &quot;attack&quot; or &quot;hacking&quot;, please contact the admins on Discord before conducting.</p>
+<h3>❌Accessing to the CTF server by automated methods</h3>
+<p>Access to the CTF server must be conducted manually (by your own hands) via a web browser. All accesses by automated methods (e.g. scraping + scripted brute-force, AI agents, etc.) are prohibited.</p>
+<p>If these actions are identified, the admin may implement a ban on the team involved.</p>
+<h3>❌Disclosing password for personal accounts</h3>
+<p>It is forbidden to disclose passwords for any personal account used on CTFd.</p>
+<p>You can disclose the the <strong>team account password</strong> when recruiting members online (such as Discord). However, please note that there is a risk of banning the entire team even if one member in the team violated the rules. Once invited, a user cannot be removed from the team. Wherever possible, it is recommended to invite trusted members individually.</p>
+<h3>❌Violation of the limit on the number of participants / Discrepancy between number of members and number of accounts in a team</h3>
+<p>It is forbidden to have more participants than the limit (six people) per team.
+For example, an action such as &quot;registering six people, but actually having seven people solving the challanges&quot; falls under this provision.</p>
+<p>Also, please be sure to <strong>create one account per person</strong>. For example, &quot;a team of five members has only two accounts&quot; is considered a violation.</p>
+<h3>❌Multiple accounts</h3>
+<p>Only one account can be created per person. It is forbidden for one person to participate with more than one account.</p>
+<h3>❌Violation of the limit on the number of participants / Discrepancy between number of members and number of accounts in a team</h3>
+<p>It is forbidden to have more participants than the limit (six people) per team.
+For example, an action such as &quot;registering six people, but actually having seven people solving the challanges&quot; falls under this provision.</p>
+<p>Also, please be sure to <strong>create one account per person</strong>. For example, &quot;a team of five members has only two accounts&quot; is considered a violation.</p>
+<h3>❌Multiple accounts</h3>
+<p>Only one account can be created per person. It is forbidden for one person to participate with more than one account.</p>
+<h3>❌Contact with individuals, organisations, etc. appearing in the challenges.</h3>
+<p>You will have to deal with real public information during the competition and you will see people and organisations that exist in the real world, not just fictional ones. You must not contact any person or organisation by social networking, email, phone, visit or any other means.
+Please note that following or liking a social networking account and posts also counts as contact.</p>
+<p>However, contact may be permitted in some challanges. If this is the case, it is clearly stated in its description.</p>
+<p>If you are unsure whether your solution constitutes a &quot;contact&quot;, please contact the admins on Discord before conducting.</p>
+<h3>❌Interference with the competition by creating fake accounts, pages etc.</h3>
+<p>It is forbidden to mislead other players by creating fake accounts, fake pages, fake challenges, fake contents etc. pretending to be related to the DIVER OSINT CTF challenges.
+In the unlikely event that you find a suspicious account or page, please report it to the admins on Discord (#ask-for-admin channel).</p>
+<h3>❌Sharing and disclosure of challanges during the competition</h3>
+<p>It is forbidden to share any information given during the competition, such as challenge text, answers (flags), solutions, hints, etc., with other teams. Attempts to obtain such information from other teams are also prohibited.</p>
+<p>It is also forbidden to leak challenges, answers (flags), solutions, hints, etc. to external people (e.g. social networking sites, Discord, chat, forum, streaming, etc.), whether public or private.</p>
+<p>For example, showing a challenge or part of a challenge to an acquaintance who is not participating in the competition and asking for assistance in solving it falls under this rule.</p>
+<p>However, after the competition is over, you can <strong>basically</strong> include the challenges, answers, and attachments your writeup article (there are some exceptions). Writeups can be published in any format, such as blog posts, social networking posts or videos, but be sure to follow the precautions indicated for each challenges.</p>
+<h3>❌Other interferences</h3>
+<p>Other activities that may be considered to interfere with the operation of the CTF are also prohibited.</p>
+<p>Flag submissions through interferences or misconduct may be disabled and account(s) related to that kind of activities may be banned.</p>
+<h2>Things to note</h2>
+<h3>📝Join the Discord server during the competition</h3>
+<p><strong>All communication during the competition will take place on Discord</strong>. Please join the DIVER OSINT CTF Discord server and make sure to get the <code>approved</code> role.</p>
+<p>Not everyone in the team needs to be on Discord, but at least one representative needs to be reachable. However, it is recommended that everyone on the team participates in the Discord whenever possible, as it is considered &quot;out of contact with your team&quot; if no one in your team becomes unresponsive on the Discord.</p>
+<p>After the competition time is over, you can leave the server of course.</p>
+<h3>📝Legitimate means of information collection</h3>
+<p>All challenges in this CTF can be answered by any means legal under the laws of Japan. They do NOT require unauthorised/illegal access or attacks.</p>
+<p>Also, if you need automated information gathering methods for research, please set a rate limit that does not constitute a DoS attack. Access to any website is the legal responsibility of a player.</p>
+<p>The determination of legality is governed by the laws of Japan. If there are any legal restrictions on the acquisition or publication of geospatial or military information in the country in which you reside or plan to travel to, please use <strong>your own judgment</strong> in participating the CTF, answering the challenges and ensuring your privacy.</p>
+<h3>📝Usage of AI Services</h3>
+<p>You can use AI services such as ChatGPT, Gemini and Claude for <strong>research purpose</strong> as long as you (or AI services) do not violate the prohibitions (Please note that any automated access to the CTF server is prohibited.). However, you are responsible for any violations that occur when the AI agent is operated autonomously by you.</p>
+<p>In addition, when submitting queries or objections to flags, those that <strong>only</strong> source AI output results will be rejected. For example, &quot;Wouldn't the information on this web page also qualify as flag?&quot; will be validated (it means the admin team will investigate), but queries such as &quot;ChatGPT says like this. could this also be a flag?&quot; will be rejected.</p>
+<h3>📝Hints</h3>
+<p>In this CTF, administrators does not provide tips to specific teams or players. As a rule, inquiries that only request hints are ignored.
+If the administrators does provide hints, they will be offered to everyone via the CTF platform.</p>
+<h3>📝Sensitive Contents</h3>
+<p>You will have to deal with real public information during the competition. Some challanges may involve sensitive or shocking information such as disasters, wars, accidents, incidents or age-restricted contents.
+Challanges that require access to such information when answering are clearly marked in its description.</p>
+<p>If such information may cause you discomfort or mental or physical discomfort, you should withdraw from participation or refrain from answering such challenges.</p>
+<p>See also the article on OSINT researchers and mental hygiene published by Giancarlo of bellingcat.</p>
+<ul>
+<li><a href="https://www.bellingcat.com/resources/2022/11/23/how-to-maintain-mental-hygiene-as-an-open-source-researcher/">How to Maintain Mental Hygiene as an Open Source Researcher</a></li>
+</ul>
+<h3>📝Sources of images etc.</h3>
+<p>The source of some images etc. will be withheld during the competition time for challenges. The source will be disclosed after the competition, so if you wish to quote them in writeups, please make sure to state it clearly.</p>
+<h3>📝Disinformation</h3>
+<p>This CTF may contain mock false information for some challenges. If you quote such information in the writeup after the end of the competition, please clearly indicate that it is false information (disinformation) to prevent confusion.</p>
+<h3>📝Legal Responsability</h3>
+<p>Participants are legally responsible for all actions associated with their participation and solving challenges in the competition.
+Minors must obtain the consent of their parents or guardians before participating.</p>
+<h3>📝OpSec / Privacy</h3>
+<p>When scanning a given URLs or files, use <strong>PASSIVE</strong> methods wherever possible. For example, if you use a website that scans URLs or files, you should to use a setting where the results are not public (e.g. not indexed by search engines).</p>
+<p>If you need to ensure your privacy when participating in the competition and accessing external websites, you are responsible for taking your own measures, such as using a VPN.</p>
+<p>It is also recommended (but not required) that you prepare a sock puppet account or other means of conducting research, provided that you do not violate the terms and conditions of each service.</p>
+<h3>📝Cancellation of competitions and changes to competition times</h3>
+<p>The competition may be cancelled or the competition time may be changed at the discretion of the admins in the event of an emergency situation such as system trouble or a major disaster during the competition time, which makes it difficult to continue the operation.</p>
+<h3>📝Contact the admins</h3>
+<p>If you have any troubles and questions, please contact us via #ask-for-admin channel on the Discord.
+During the CTF competition, we don't respond on DM or X except the trouble of the ticket system. Also we don't respond by admin members' personal DM.</p>
+<h1>大会ルールおよび規約 [日本語 / JAPANESE]</h1>
+<h2>概要・ルール</h2>
+<ul>
+<li>開催時間は <strong>2025/06/07 (土) 12:00 (JST) - 06/08 (日) 12:00 (JST)</strong>（24時間）です。
+<ul>
+<li>日本時間では、深夜ではなく<strong>正午</strong>です。ご注意ください。</li>
+</ul>
+</li>
+<li><strong>1チームあたり6名まで</strong> 参加可能です。</li>
+<li>オンライン上で開催されます。Jeopardy形式です。</li>
+<li>ルールに同意し、&quot;welcome&quot;のFlagをsubmitすると、すべての問題が表示されます。</li>
+<li>解答順序は自由です。ただし、問題によっては別の問題で得た情報を使用するものもあります。</li>
+<li>各問題の点数は、参加者全体の正答数によって変動します。</li>
+<li>原則として、すべて無償のツールやWebサイトから得られる情報で解答可能です。ただし、有償のツールの使用を禁止するものではありません。</li>
+<li>CTF競技中のすべての連絡はDiscordで実施されます。 <strong>必ずDiscordサーバに参加してください</strong>。 チームと連絡が取れない場合、スコアが無効になることがあります。</li>
+<li>ルールや禁止事項への違反行為が確認された場合、該当するプレイヤーやチームは失格（BAN）や減点などの処分を受けます。</li>
+<li>CTFサーバ (CTFd) へのユーザ登録を以て、すべてのルールおよび規約に同意したものと見なします。</li>
+</ul>
+<h2>禁止事項</h2>
+<h3>❌他プレイヤーや運営者に対する攻撃や妨害</h3>
+<p>他プレイヤーや運営者に対するハラスメント、攻撃、妨害、脅迫、晒し（doxing）など、いかなる嫌がらせも行ってはなりません。</p>
+<p>また、他プレイヤーや運営者のアカウントなどからFlagが得られる問題はありません。</p>
+<h3>❌問題サーバやアカウントに対する攻撃・ハッキング</h3>
+<p>本競技のFlagはすべて公開されている情報から得ることができます。
+問題サーバおよび各種アカウントに対する攻撃は禁止します。また、パスワードリセットの試み、アカウント停止を試みることなども禁止行為に該当します。</p>
+<p>攻撃・ハッキングによって得られた Flag は無効と判定される可能性があります。</p>
+<p>自分の解法が「攻撃」「ハッキング」に該当するか不安な場合、実施前にDiscord上で運営者に問い合わせてください。</p>
+<h3>❌問題サーバに対する機械的なアクセス</h3>
+<p>CTFの問題サーバに対するアクセスは、Webブラウザから手動で行ってください。機械的手法（スクレイピング+スクリプトによる総当たり、AIエージェントなど）によるアクセスはすべて禁止されています。</p>
+<p>これらの行為が確認された場合、BANを実施する可能性があります。</p>
+<h3>❌個人アカウントのパスワード公開</h3>
+<p>CTFの問題サーバ上で使用するあらゆる個人アカウントのパスワードを公開することは禁止します。</p>
+<p><strong>チームのパスワード</strong>についてはオンライン（Discordなど）でメンバーを募る時に公開しても問題ありません。ただし、チーム内で1人でもルール違反を行った場合、チーム全体がBANされるリスクがあることに注意してください。一度招待したユーザはチームから削除できません。可能な限り、信頼できるメンバーを個別に招待することを推奨します。</p>
+<h3>❌参加人数制限の違反 / メンバー人数とアカウント数の不一致</h3>
+<p>1チームあたりの制限人数（6名）を超える人数の参加は禁止されています。
+例えば「6名を登録し、実際には7名で問題を解く」といった行為はこの規定に該当します。</p>
+<p>また、必ず <strong>1人あたり1つのアカウントを作成してください</strong>。たとえば、「5人でチームを組んでいるのに、2人分のアカウントしかない」といった行為は違反とみなします。</p>
+<h3>❌複数アカウントの作成</h3>
+<p>作成できるのは1人あたり1アカウント（個人アカウント）です。たとえば、1人が2つ以上の個人アカウントを持って参加することは禁止されています。</p>
+<h3>❌参加人数制限の違反 / メンバー人数とアカウント数の不一致</h3>
+<p>1チームあたりの制限人数（6名）を超える人数の参加は禁止されています。
+例えば「6名を登録し、実際には7名で問題を解く」といった行為はこの規定に該当します。</p>
+<p>また、必ず <strong>1人あたり1つのアカウントを作成してください</strong>。たとえば、「5人でチームを組んでいるのに、2人分のアカウントしかない」といった行為は違反とみなします。</p>
+<h3>❌複数アカウントの作成</h3>
+<p>作成できるのは1人あたり1アカウント（個人アカウント）です。たとえば、1人が2つ以上の個人アカウントを持って参加することは禁止されています。</p>
+<h3>❌問題に登場する個人や組織などへの接触</h3>
+<p>本競技では実世界の公開情報を取り扱い、競技中には架空の人物・組織だけでなく、実在の人物・組織を目にすることになります。実在・架空を問わず、いかなる個人や団体に対しても、SNS・メール・電話・訪問などの手段で接触してはなりません。
+なお、SNSアカウントに対するフォローや「いいね」も接触とみなされます。</p>
+<p>ただし、一部の問題では接触が許可される場合があります。その場合は問題文に明示されています。</p>
+<p>解法が「接触」に該当するか不安な場合、実施する前にDiscord上で運営に問い合わせてください。</p>
+<h3>❌偽アカウントや偽コンテンツの作成などによる競技妨害</h3>
+<p>DIVER OSINT CTFで出題されている問題に関連していることを装ったアカウントやWebサイト、コンテンツ、問題などを競技時間中に作成・公開し、他のプレイヤーを惑わす行為は禁止されています。
+万が一、不審なアカウントやページを見つけた場合、Discordの #ask-for-admin チャンネルから運営者に報告してください。</p>
+<h3>❌競技時間中における問題や解法などの共有・公開</h3>
+<p>競技中にあなたが得た問題・解答（Flag）・解法・ヒントなど、CTFに関するあらゆる情報を第三者（自分のチームメンバー除く）に共有する行為は禁止されています。他の参加者からこれらを得ようとする行為も禁止されています。</p>
+<p>また、公開・非公開を問わず、問題・解答（Flag）・解法・ヒントなどを外部（WebサイトやSNS、Discord、チャット、掲示板、動画配信など）に流出させてはいけません。
+例えば、競技に参加していない知人などに問題やその一部を提示し、解答に際して補助を求める行為などはこの規定に該当し、違反となります。</p>
+<p>ただし、競技終了後にはwriteupとして問題、解答、添付ファイルを <strong>原則として</strong> 公開可能です（一部の例外があります）。writeupはブログ記事、SNS投稿、動画など、どのような形式で公開しても構いませんが、各問題で示されている注意事項に必ず従ってください。</p>
+<h3>❌その他の妨害行為</h3>
+<p>その他、運営を妨げると考えられる行為も禁止します。妨害行為・不正行為によって得られたFlagは無効化される可能性があり、そのような行為に関与したアカウントはBANされる可能性があります。</p>
+<h2>留意事項</h2>
+<h3>📝Discordサーバへの参加</h3>
+<p><strong>競技中、すべての連絡はDiscordで実施されます</strong>。DIVER OSINT CTFのDiscordサーバに参加して、<code>approved</code> ロールを取得しておいてください。</p>
+<p>チームの全員がDiscordに参加する必要はありませんが、少なくとも代表者1人は連絡が取れる状態にしておく必要があります。ただし、Discord上で誰でも応答できなくなると「チームと連絡が取れない」とみなされるため、可能な限りチームの全員がDiscordに参加することを推奨します。</p>
+<p>競技時間終了後はサーバから退出してもかまいません。</p>
+<h3>📝合法的な情報収集手段について</h3>
+<p>本CTFにおけるすべての問題は、日本国の法令において合法的な手段で解答可能です。不正アクセスや攻撃を行う必要はありません。</p>
+<p>また、もし解答の過程で自動化された情報収集を行う場合は、DoS攻撃にならないレートリミットを設定してください。あらゆるWebサイトに対するアクセスは解答者に法的責任があります。</p>
+<p>なお、合法性の判断は日本国の法令に準拠しています。ご自身が居住されている国や渡航予定の国において、地理空間情報や軍事情報の取得や公表に何らかの法的制限がある場合は、CTFへの参加や問題への解答、プライバシーの確保を <strong>ご自身の判断で</strong> 行ってください。</p>
+<h3>📝AIの使用について</h3>
+<p>あなたやAIが禁止事項に違反しない限り、ChatGPTやGemini、ClaudeなどのAIサービスを <strong>調査</strong> に利用してもかまいません（CTF問題サーバに対するいかなる機械的なアクセスも禁止されている点には留意してください）。ただし、AIエージェントを自律的に動作させた場合に何らかの違反行為が発生した場合、あなたの責任となります。</p>
+<p>また、Flagに対する問い合わせや異議申し立てを行う際、AIの出力結果 <strong>のみ</strong> をソースとするものは却下されます。例えば、「このWebページに記載されている情報もFlagとして認められるのでは？」といった問い合わせは有効ですが、「ChatGPTの出力結果によれば、これもFlagになるのでは？」といった問い合わせは却下されます。</p>
+<h3>📝ヒントについて</h3>
+<p>本CTFでは、特定のチームやプレイヤーに対してヒントを提供しません。ヒントを要求するだけの問い合わせは原則として無視されます。
+もし、運営者がヒントを提供する場合、CTFプラットフォーム上で全員に対して提供されます。</p>
+<h3>📝センシティブな情報について</h3>
+<p>本競技では実世界の事象を取り扱います。問題によっては、災害や戦争、事件・事故、年齢制限付きコンテンツなど、センシティブあるいはショッキングな情報に触れる可能性があります。
+解答に際してそのような情報に接触する必要がある問題は、その旨が明示されています。</p>
+<p>そのような情報によって不快感を覚えたり、心身に不調をきたす可能性がある場合、参加を取りやめるか、注意事項が示されている問題の解答を控えてください。</p>
+<p>bellingcatのGiancarlo氏が公開している、OSINTリサーチャーと精神衛生に関する記事も参考にしてください。</p>
+<ul>
+<li><a href="https://www.bellingcat.com/resources/2022/11/23/how-to-maintain-mental-hygiene-as-an-open-source-researcher/">How to Maintain Mental Hygiene as an Open Source Researcher</a></li>
+</ul>
+<h3>📝画像などの出典について</h3>
+<p>一部の画像などは競技上の理由により、競技時間中は出典が伏せられるものがあります。競技終了後に出典を公開しますので、writeupで引用する場合は明記するようにしてください。</p>
+<h3>📝偽情報について</h3>
+<p>本競技では、模擬的な偽情報を含む可能性があります。終了後にwriteupでこのような情報を扱う場合、混乱を防ぐために偽情報であることを明示してください。</p>
+<h3>📝法的責任について</h3>
+<p>競技参加・解答に伴うすべての行動に対して、参加者は法的責任を負います。
+未成年者は保護者の同意を得た上で参加してください。</p>
+<h3>📝OpSec / プライバシーについて</h3>
+<p>与えられたURLやファイルをスキャンする場合、可能な限り <strong>passive</strong> な手法を使用してください。例えば、URLやファイルを調査するサイトを利用する場合、結果がパブリックにならない（たとえば検索エンジンにindexされない）設定を使用してください。</p>
+<p>また、競技の参加および外部サイトのアクセスに際して、プライバシーの確保が必要な場合、VPNを利用するなど、各自の責任で対策を講じてください。</p>
+<p>必須ではありませんが、各サービスの規約に違反しない範囲で、サブアカウントなどを用意して調査を行うことも推奨します。</p>
+<h3>📝競技中止および競技時間の変更について</h3>
+<p>競技時間中にシステムトラブルや大規模災害などの緊急事態が発生し、運営続行が困難になった場合など、運営者の裁量で競技を中止したり、競技時間を変更したりする可能性があります。</p>
+<h3>📝運営者への問い合わせ</h3>
+<p>Discordの #ask-for-admin チャンネルから問い合わせを行ってください。
+CTF競技中、チケットシステムの不具合を除いてDiscord DMやXでの対応は致しません。また、運営メンバー個人のDMでの対応はいたしません。</p>
+
+   </section>
+
+</body>
+
+</html>
