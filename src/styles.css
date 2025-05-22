@@ -8,9 +8,12 @@
 }
 
 @layer base {
-  body{@apply bg-gray-500 text-gray-600;}
-  h1 { @apply text-3xl font-bold text-diver-500; }
-  h2 { @apply text-2xl font-semibold text-diver-500; }
-  h3 { @apply text-xl  font-medium   text-diver-500; }
+  body{@apply bg-gray-100 text-gray-600;}
+  h1 { @apply text-3xl font-bold text-diver-500 my-4; }
+  h2 { @apply text-2xl font-semibold text-diver-500 my-4; }
+  h3 { @apply text-xl  font-medium   text-diver-500 my-4; }
+  p { @apply text-gray-600 my-2; }
   a  { @apply text-sky-600 underline hover:no-underline; }
+  ul { @apply list-disc ml-5 text-lg;}
+  code {@apply font-mono bg-sky-100 text-blue-700 p-0.5}
 }
