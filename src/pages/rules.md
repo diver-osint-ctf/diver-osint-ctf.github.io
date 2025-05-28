@@ -4,7 +4,7 @@
 
 ## CTF Overview / Rules
 
-- The event will take place from **2025 June 7th (Sat) 03:00 UTC - June 8th (Sun) 03:00 UTC** (24hrs).
+- The event will take place from **2025 June 7th (Sat) 03:00 am UTC - June 8th (Sun) 03:00 am UTC** (24hrs).
 - **Up to 6 participants per team** are allowed.
 - The CTF will be held online and Jeopardy style.
 - You can see all challenges after you agree with the rules and submit flag of the "welcome" challenge.
