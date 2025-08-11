@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="DIVER OSINT CTF" />
+    <meta property="og:description"
+        content="DIVER OSINT CTF is a real-world oriented OSINT CTF." />
+    <meta property="og:url" content="https://diverctf.org/" />
+    <meta property="og:image" content="https://diverctf.org/ogp.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DIVER OSINT CTF" />
+    <title>DIVER OSINT CTF</title>
+</head>
+
+<body class="h-screen">
+    <!-- Hero Background Video -->
+    <div class="absolute inset-0 w-full h-full overflow-hidden -z-10">
+        <video class="absolute min-w-full min-h-full object-cover" autoplay loop muted playsinline>
+            <source src="hero_bg_movie.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-diver-500/70"></div>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="relative w-full flex flex-col items-center font-notosans-with-fallback">
+        <!-- Navigation -->
+        <nav class="fixed top-0 w-full z-50 h-16 md:h-20 transition-all duration-500" id="navbar">
+            <div class="w-11/12 md:w-8/12 mx-auto flex justify-between text-white h-full items-center">
+                <a href="https://diverctf.org"><img src="diver_osint_ctf_logo_white.svg" alt="DIVER OSINT CTF"
+                        class="h-4 md:h-5"></a>
+                <div class="text-base md:text-xl">
+                    <a href="./index.html" class="hover:underline">JP</a> | <span class="font-bold">EN</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="flex items-center justify-center h-[60vh] mt-16 md:mt-24 px-4 md:px-0">
+            <div class="px-1 py-1">
+                <h2 class="text-4xl md:text-6xl font-medium text-white text-center leading-[1.2] tracking-[.05em]">
+                    Dive into the information ocean. <br>Decode the real world.
+                </h2>
+                <p class="text-lg md:text-2xl text-white text-center mt-6 md:mt-10 font-light px-4 md:px-0">
+                    DIVER OSINT CTF is a competitive OSINT.<br>
+                    Anyone can participate online, from beginners to experts.
+                </p>
+                <div class="flex justify-center mt-8 space-x-4">
+                    <a href="#upcoming-events"
+                        class="inline-flex items-center gap-2 px-8 py-4 bg-white text-diver-500 rounded-md hover:bg-white/90 transition-colors">
+                        <i class="far fa-flag"></i><span>Check Upcoming Events</span>
+                    </a>
+                    <a href="#past-challenges"
+                        class="inline-flex items-center gap-2 px-8 py-4 bg-white text-diver-500 rounded-md hover:bg-white/90 transition-colors">
+                        <i class="fas fa-clock-rotate-left"></i><span>Check Past Challenges</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="relative w-full bg-white text-diver-500">
+            <div class="max-w-6xl mx-auto py-12 md:py-24 px-4 md:px-6">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 md:mb-12">What is DIVER OSINT CTF?</h2>
+                <div class="space-y-6 mb-16">
+                    <p class="text-lg leading-relaxed text-diver-500/90">
+                        DIVER OSINT CTF is a real-world oriented OSINT competition.<br>
+                        We provide challenges suitable for participants of all levels, regardless of their country or
+                        region.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-medium text-diver-500">What is OSINT?</h3>
+                        <div class="flex gap-8">
+                            <div class="space-y-4">
+                                <p class="leading-relaxed">
+                                    OSINT stands for Open Source Intelligence. It's a methodology for collecting and
+                                    analyzing publicly available information to derive valuable insights. Originally
+                                    used in intelligence and national security fields, it's now widely applied in
+                                    cybersecurity, investigative journalism, and various other domains.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-medium text-diver-500">What is CTF?</h3>
+                        <div class="flex gap-8">
+                            <div class="space-y-4">
+                                <p class="leading-relaxed">
+                                    CTF stands for Capture The Flag, a type of information security competition often
+                                    called a "white-hat hacker contest." Participants find vulnerabilities in
+                                    applications, servers, or encryption systems to obtain special strings called
+                                    "flags" and earn points.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-3xl font-medium my-6">What is OSINT CTF?</h3>
+                <div class="space-y-6 mb-16">
+                    <p class="leading-relaxed text-diver-500/90">
+                        An OSINT CTF focuses on open-source intelligence challenges. Participants use various techniques
+                        such as web searching, file analysis, social media investigation, and geolocation using images
+                        and map data to solve problems.<br>
+                        Since it doesn't involve actual hacking, many challenges don't require special programming or
+                        security skills, making it accessible for beginners.
+                    </p>
+                    <p class="leading-relaxed text-diver-500/90">
+                        For example, here are some challenges from past DIVER OSINT CTF events:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-6">
+
+                        <div class="border border-diver-500/30 rounded-sm p-12 space-y-8">
+                            <div class="space-y-4">
+                                <p class="text-md">
+                                    What is the name of the intersection closest to where the image was taken?
+                                </p>
+                                <img src="challenges/246.jpg" alt="">
+                                <a class="font-medium underline"
+                                    href="https://github.com/diver-osint-ctf/writeups/tree/main/2024/introduction/246"
+                                    target="_blank">&gt; Answer and Explanations</a>
+                            </div>
+                        </div>
+
+                        <div class="border border-diver-500/30 rounded-sm p-12 space-y-8">
+                            <div class="space-y-4">
+                                <p class="text-md">
+                                    One man said, "I once complained to the city about this intersection, 20 years ago,
+                                    I think it was November. The administration is terrible these days, but those were
+                                    good days."
+                                    What did he contact them about? Answer why, as stated in the documents. (Image
+                                    Source: Google Street View)
+                                </p>
+                                <img src="challenges/streetview.png" alt="">
+                                <a class="font-medium underline"
+                                    href="https://github.com/diver-osint-ctf/writeups/tree/main/2024/geo/public_service"
+                                    target="_blank">&gt; Answer and Explanations</a>
+                            </div>
+                        </div>
+
+                        <div class="border border-diver-500/30 rounded-sm p-12 space-y-8">
+                            <div class="space-y-4">
+                                <p class="text-md">
+                                    On 25 October 2024, satellite imagery confirmed that the Russian-flagged RORO vessel
+                                    "ANGARA", which is under sanctions, was anchored in a certain port.
+                                </p>
+                                <a class="font-medium underline"
+                                    href="https://github.com/diver-osint-ctf/writeups/tree/main/2025/transportation/sanction"
+                                    target="_blank">&gt; Answer and Explanations</a>
+                            </div>
+                        </div>
+
+                        <div class="border border-diver-500/30 rounded-sm p-12 space-y-8">
+                            <div class="space-y-4">
+                                <p class="text-md">
+                                    Tomitaro Fujii (藤井富太郎), a prominent Thursday Island pearl diver, was interned during
+                                    World War II. Please identify the camp from which he was released and the date of
+                                    his release.
+                                </p>
+                                <a class="font-medium underline"
+                                    href="https://github.com/diver-osint-ctf/writeups/tree/main/2025/history/internment"
+                                    target="_blank">&gt; Answer and Explanations</a>
+                            </div>
+                        </div>
+
+                        <div class="border border-diver-500/30 rounded-sm p-12 space-y-8">
+                            <div class="space-y-4">
+                                <p class="text-md">
+                                    Answer the amount (in local currency) paid by the mayor of São Miguel do Guamá to a
+                                    food-related company by credit card payment in January 2025.
+                                </p>
+                                <a class="font-medium underline"
+                                    href="https://github.com/diver-osint-ctf/writeups/blob/main/2025/company/expense"
+                                    target="_blank">&gt; Answer and Explanations</a>
+                            </div>
+                        </div>
+
+                        <div class="border border-diver-500/30 rounded-sm p-12 space-y-8">
+                            <div class="space-y-4">
+                                <p class="text-md">
+                                    There is a large object at 69.216246, 33.378242. Answer the project number and
+                                    particular name of that object in local language.
+                                </p>
+                                <a class="font-medium underline"
+                                    href="https://github.com/diver-osint-ctf/writeups/blob/main/2025/military/object"
+                                    target="_blank">&gt; Answer and Explanations</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events Section -->
+        <section class="relative w-full bg-diver-500 text-white" id="upcoming-events">
+            <div class="max-w-6xl mx-auto py-18 md:py-24 px-6">
+                <h2 class="text-4xl font-medium mb-6 md:mb-16">Upcoming Events</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+                    <div class="border border-white/30 rounded-sm p-12 space-y-8">
+                        <img src="diver_osint_ctf_logo_white.svg" alt="DIVER OSINT CTF" class="h-8">
+                        <div class="space-y-4">
+                            <p class="text-lg font-medium">
+                                Next event: Early Summer 2026 (Online)<br>
+                                For beginners to experts. Jeopardy-style format<br>
+                                Maximum 6 members per team
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Challenges Section -->
+        <section class="relative w-full bg-white text-diver-500" id="past-challenges">
+            <div class="max-w-6xl mx-auto py-18 md:py-24 px-6">
+                <h2 class="text-4xl font-medium mb-6 md:mb-16 text-diver-500">Past Challenges & Writeups</h2>
+                <div class="space-y-6 mb-16">
+                    <p class="text-lg leading-relaxed text-diver-500/90">
+                        Past DIVER OSINT CTF challenges are available on GitHub. While the difficulty may vary from the
+                        original due to changing search results, they provide valuable learning opportunities.
+                    </p>
+                    <div class="flex justify-start">
+                        <a href="https://github.com/diver-osint-ctf/writeups"
+                            class="inline-flex items-center gap-2 px-6 py-3 bg-diver-500 text-white rounded-md hover:bg-diver-600 transition-colors">
+                            <i class="fab fa-github"></i>
+                            <span>Check on GitHub</span>
+                        </a>
+                    </div>
+
+                    <p class="text-lg leading-relaxed text-diver-500/90">
+                        Additionally, participants have published writeups sharing various approaches to solving the
+                        challenges.
+                    </p>
+                    <div class="flex flex-wrap justify-start gap-4 mt-6">
+                        <a href="https://zenn.dev/search?q=DIVER+OSINT+CTF&order=latest" target="_blank"
+                            class="inline-flex items-center gap-2 px-6 py-3 bg-white text-diver-500 border border-diver-500 rounded-md hover:bg-diver-500 hover:text-white transition-colors">
+                            <span>Search on Zenn (JP)</span>
+                        </a>
+                        <a href="https://qiita.com/search?q=DIVER%20OSINT%20CTF&sort=created" target="_blank"
+                            class="inline-flex items-center gap-2 px-6 py-3 bg-white text-diver-500 border border-diver-500 rounded-md hover:bg-diver-500 hover:text-white transition-colors">
+                            <span>Search on Qiita (JP)</span>
+                        </a>
+                        <a href="https://note.com/search?q=DIVER+OSINT+CTF" target="_blank"
+                            class="inline-flex items-center gap-2 px-6 py-3 bg-white text-diver-500 border border-diver-500 rounded-md hover:bg-diver-500 hover:text-white transition-colors">
+                            <span>Search on note (JP)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="relative w-full bg-white text-diver-500/80">
+            <div class="max-w-6xl mx-auto py-12 md:py-24 px-6">
+                <h2 class="text-4xl font-medium mb-16 text-diver-500">Partners</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <a href="https://deepdive.or.jp/en/" target="_blank"
+                        class="flex items-center justify-center p-6 border border-diver-500/10 rounded-lg hover:border-diver-500/30 transition-colors">
+                        <img src="partners/deepdive.png" alt="Partner 1" class="max-h-16">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="relative w-full bg-white text-diver-500/80">
+            <div class="max-w-6xl mx-auto py-12 md:py-24 px-6">
+                <h2 class="text-4xl font-medium mb-16 text-diver-500">Contact</h2>
+                <div class="space-y-3 mb-16">
+                    <p class="text-lg leading-relaxed text-diver-500/90">
+                        Please contact us via DM on our <a href="https://x.com/DIVER_OSINT_CTF" target="_blank"
+                            class="underline">official X account</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="relative w-full bg-diver-500 text-white py-8 md:py-12">
+            <div class="max-w-6xl mx-auto px-4 md:px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
+                    <div class="space-y-2">
+                        <img src="diver_osint_ctf_logo_white.svg" alt="DIVER OSINT CTF" class="h-5 mb-4">
+                        <p class="text-sm text-white/80">© 2025 DIVER OSINT CTF</p>
+                    </div>
+                    <div class="flex gap-6">
+                        <a href="https://x.com/DIVER_OSINT_CTF"
+                            class="text-white hover:text-white/80 transition-colors">
+                            <i class="fab fa-x-twitter text-xl"></i>
+                        </a>
+                        <a href="https://discord.diverctf.org/"
+                            class="text-white hover:text-white/80 transition-colors">
+                            <i class="fab fa-discord text-xl"></i>
+                        </a>
+                        <a href="https://github.com/diver-osint-ctf"
+                            class="text-white hover:text-white/80 transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="https://ctftime.org/ctf/1111" class="text-white hover:text-white/80 transition-colors">
+                            <i class="far fa-square-check fa-rotate-270 text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-diver-500');
+            } else {
+                navbar.classList.remove('bg-diver-500');
+            }
+        });
+    </script>
+</body>
+
+</html>
