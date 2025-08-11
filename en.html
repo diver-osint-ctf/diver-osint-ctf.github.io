@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <meta property="og:title" content="DIVER OSINT CTF" />
     <meta property="og:description"
-        content="DIVER OSINT CTF は現実世界指向の OSINT CTF（OSINTのコンテスト）です。" />
+        content="DIVER OSINT CTF is a real-world oriented OSINT CTF." />
     <meta property="og:url" content="https://diverctf.org/" />
     <meta property="og:image" content="https://diverctf.org/ogp.png" />
     <meta property="og:image:width" content="1200" />
@@ -35,10 +36,11 @@
         <!-- Navigation -->
         <nav class="fixed top-0 w-full z-50 h-16 md:h-20 transition-all duration-500" id="navbar">
             <div class="w-11/12 md:w-8/12 mx-auto flex justify-between text-white h-full items-center">
-            <a href="https://diverctf.org"><img src="diver_osint_ctf_logo_white.svg" alt="DIVER OSINT CTF" class="h-4 md:h-5"></a>
-            <div class="text-base md:text-xl">
-                <span class="font-bold">JP</span> | <a href="./en.html" class="hover:underline">EN</a>
-            </div>
+                <a href="https://diverctf.org"><img src="diver_osint_ctf_logo_white.svg" alt="DIVER OSINT CTF"
+                        class="h-4 md:h-5"></a>
+                <div class="text-base md:text-xl">
+                    <a href="./index.html" class="hover:underline">JP</a> | <span class="font-bold">EN</span>
+                </div>
             </div>
         </nav>
 
@@ -46,21 +48,20 @@
         <section class="flex items-center justify-center h-[60vh] mt-16 md:mt-24 px-4 md:px-0">
             <div class="px-1 py-1">
                 <h2 class="text-4xl md:text-6xl font-medium text-white text-center leading-[1.2] tracking-[.05em]">
-                    情報の海に飛び込んで<br>
-                    現実世界を解き明かす
+                    Dive into the information ocean. <br>Decode the real world.
                 </h2>
                 <p class="text-lg md:text-2xl text-white text-center mt-6 md:mt-10 font-light px-4 md:px-0">
-                    DIVER OSINT CTFは、現実世界に存在する情報を調査するOSINTのコンテストです。<br>
-                    初心者から上級者まで、どなたでもオンラインで参加可能です。
+                    DIVER OSINT CTF is a competitive OSINT.<br>
+                    Anyone can participate online, from beginners to experts.
                 </p>
                 <div class="flex justify-center mt-8 space-x-4">
-                    <a href="#upcoming-events" 
+                    <a href="#upcoming-events"
                         class="inline-flex items-center gap-2 px-8 py-4 bg-white text-diver-500 rounded-md hover:bg-white/90 transition-colors">
-                        <i class="far fa-flag"></i><span>次回開催情報</span>
+                        <i class="far fa-flag"></i><span>Check Upcoming Events</span>
                     </a>
                     <a href="#past-challenges"
                         class="inline-flex items-center gap-2 px-8 py-4 bg-white text-diver-500 rounded-md hover:bg-white/90 transition-colors">
-                        <i class="fas fa-clock-rotate-left"></i><span>過去の問題</span>
+                        <i class="fas fa-clock-rotate-left"></i><span>Check Past Challenges</span>
                     </a>
                 </div>
             </div>
@@ -69,117 +70,133 @@
         <!-- About Section -->
         <section class="relative w-full bg-white text-diver-500">
             <div class="max-w-6xl mx-auto py-12 md:py-24 px-4 md:px-6">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8 md:mb-12">DIVER OSINT CTFとは？</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 md:mb-12">What is DIVER OSINT CTF?</h2>
                 <div class="space-y-6 mb-16">
                     <p class="text-lg leading-relaxed text-diver-500/90">
-                        DIVER OSINT CTF は現実世界指向の OSINT CTF（OSINTのコンテスト）です。<br>
-                        国や地域、レベルを問わず、初心者から上級者まで様々な方々が取り組める問題を出題します。
+                        DIVER OSINT CTF is a real-world oriented OSINT competition.<br>
+                        We provide challenges suitable for participants of all levels, regardless of their country or
+                        region.
                     </p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                     <div class="space-y-6">
-                        <h3 class="text-2xl font-medium text-diver-500">OSINTとは？</h3>
+                        <h3 class="text-2xl font-medium text-diver-500">What is OSINT?</h3>
                         <div class="flex gap-8">
                             <div class="space-y-4">
                                 <p class="leading-relaxed">
-                                    Open Source
-                                    Intelligence（オープンソース・インテリジェンス）の略称で、オシントと読みます。合法的に入手できる、公開されている情報を収集・分析し、価値ある知見を導き出す手法です。元々は諜報や安全保障分野の用語ですが、現在ではサイバーセキュリティや調査報道など、様々な分野で活用されています。
+                                    OSINT stands for Open Source Intelligence. It's a methodology for collecting and
+                                    analyzing publicly available information to derive valuable insights. Originally
+                                    used in intelligence and national security fields, it's now widely applied in
+                                    cybersecurity, investigative journalism, and various other domains.
                                 </p>
                             </div>
                         </div>
                     </div>
 
                     <div class="space-y-6">
-                        <h3 class="text-2xl font-medium text-diver-500">CTFとは？</h3>
+                        <h3 class="text-2xl font-medium text-diver-500">What is CTF?</h3>
                         <div class="flex gap-8">
                             <div class="space-y-4">
                                 <p class="leading-relaxed">
-                                    Capture The
-                                    Flag（旗取りゲーム）の略称です。情報セキュリティの技術を競うコンテストのことで、「ホワイトハッカーの大会」と称されることもあります。参加者は、与えられたアプリケーションやサーバ、暗号化システムなどに存在する脆弱性を探し出してハッキングを行います。無事にハッキングできると、そこから「フラグ」と呼ばれる特定の文字列を取得でき、得点が加算されるものが代表的な形式です。
+                                    CTF stands for Capture The Flag, a type of information security competition often
+                                    called a "white-hat hacker contest." Participants find vulnerabilities in
+                                    applications, servers, or encryption systems to obtain special strings called
+                                    "flags" and earn points.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <h3 class="text-3xl font-medium my-6">OSINT CTFとは？</h3>
+                <h3 class="text-3xl font-medium my-6">What is OSINT CTF?</h3>
                 <div class="space-y-6 mb-16">
                     <p class="leading-relaxed text-diver-500/90">
-                        CTFのうち、OSINT分野に特化した問題が出題されるものです。例えばWebサイトの検索、ファイルの解析、人物や組織のSNS調査、画像や地図データを用いた場所の特定といった手法を組み合わせて、与えられた問題に解答します。<br>
-                        いわゆるハッキングを行うものではないため、プログラミングや情報セキュリティに関する特別な技術を必要としない問題も多く、初心者でも取り組みやすいという特徴があります。
+                        An OSINT CTF focuses on open-source intelligence challenges. Participants use various techniques
+                        such as web searching, file analysis, social media investigation, and geolocation using images
+                        and map data to solve problems.<br>
+                        Since it doesn't involve actual hacking, many challenges don't require special programming or
+                        security skills, making it accessible for beginners.
                     </p>
                     <p class="leading-relaxed text-diver-500/90">
-                        たとえば、過去のDIVER OSINT CTFでは、以下のような問題が出題されました。
+                        For example, here are some challenges from past DIVER OSINT CTF events:
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-6">
 
                         <div class="border border-diver-500/30 rounded-sm p-12 space-y-8">
                             <div class="space-y-4">
                                 <p class="text-md">
-                                    画像が撮影された場所から最も近い交差点名を答えよ。
+                                    What is the name of the intersection closest to where the image was taken?
                                 </p>
                                 <img src="challenges/246.jpg" alt="">
                                 <a class="font-medium underline"
                                     href="https://github.com/diver-osint-ctf/writeups/tree/main/2024/introduction/246"
-                                    target="_blank">&gt; 解答と解説</a>
+                                    target="_blank">&gt; Answer and Explanations</a>
                             </div>
                         </div>
 
                         <div class="border border-diver-500/30 rounded-sm p-12 space-y-8">
                             <div class="space-y-4">
                                 <p class="text-md">
-                                    ある男が「20年前の11月だったかな、この交差点について市に文句を付けてやったことがあるんだよ。最近の行政は酷いもんだがね、あの頃は良かったよ。」と言っていた。彼は何を連絡したのだろうか。資料に記載されている通りの理由を答えよ。（画像出典:
-                                    Google Street View）
+                                    One man said, "I once complained to the city about this intersection, 20 years ago,
+                                    I think it was November. The administration is terrible these days, but those were
+                                    good days."
+                                    What did he contact them about? Answer why, as stated in the documents. (Image
+                                    Source: Google Street View)
                                 </p>
                                 <img src="challenges/streetview.png" alt="">
                                 <a class="font-medium underline"
                                     href="https://github.com/diver-osint-ctf/writeups/tree/main/2024/geo/public_service"
-                                    target="_blank">&gt; 解答と解説</a>
+                                    target="_blank">&gt; Answer and Explanations</a>
                             </div>
                         </div>
 
                         <div class="border border-diver-500/30 rounded-sm p-12 space-y-8">
                             <div class="space-y-4">
                                 <p class="text-md">
-                                    2024年10月25日、制裁下にあるロシア船籍のRORO船「ANGARA」がある港湾に停泊していることが衛星画像で確認された。停泊位置を答えよ。
+                                    On 25 October 2024, satellite imagery confirmed that the Russian-flagged RORO vessel
+                                    "ANGARA", which is under sanctions, was anchored in a certain port.
                                 </p>
                                 <a class="font-medium underline"
                                     href="https://github.com/diver-osint-ctf/writeups/tree/main/2025/transportation/sanction"
-                                    target="_blank">&gt; 解答と解説</a>
+                                    target="_blank">&gt; Answer and Explanations</a>
                             </div>
                         </div>
 
                         <div class="border border-diver-500/30 rounded-sm p-12 space-y-8">
                             <div class="space-y-4">
                                 <p class="text-md">
-                                    著名な木曜島の真珠採りダイバーであった藤井富太郎氏は、第二次世界大戦中、強制収容されました。彼が釈放された収容所と釈放の年月日を明らかにせよ。
+                                    Tomitaro Fujii (藤井富太郎), a prominent Thursday Island pearl diver, was interned during
+                                    World War II. Please identify the camp from which he was released and the date of
+                                    his release.
                                 </p>
                                 <a class="font-medium underline"
                                     href="https://github.com/diver-osint-ctf/writeups/tree/main/2025/history/internment"
-                                    target="_blank">&gt; 解答と解説</a>
+                                    target="_blank">&gt; Answer and Explanations</a>
                             </div>
                         </div>
 
                         <div class="border border-diver-500/30 rounded-sm p-12 space-y-8">
                             <div class="space-y-4">
                                 <p class="text-md">
-                                    2025年1月、São Miguel do Guamáの市長が、ある食品関連会社にクレジットカード決済で支払った金額（現地通貨）を答えよ。
+                                    Answer the amount (in local currency) paid by the mayor of São Miguel do Guamá to a
+                                    food-related company by credit card payment in January 2025.
                                 </p>
                                 <a class="font-medium underline"
                                     href="https://github.com/diver-osint-ctf/writeups/blob/main/2025/company/expense"
-                                    target="_blank">&gt; 解答と解説</a>
+                                    target="_blank">&gt; Answer and Explanations</a>
                             </div>
                         </div>
 
                         <div class="border border-diver-500/30 rounded-sm p-12 space-y-8">
                             <div class="space-y-4">
                                 <p class="text-md">
-                                    座標 69.216246, 33.378242 には大きな構造物が存在する。この構造物のプロジェクト番号および、構造物の名称（固有名詞）を 現地語 で答えよ。
+                                    There is a large object at 69.216246, 33.378242. Answer the project number and
+                                    particular name of that object in local language.
                                 </p>
                                 <a class="font-medium underline"
                                     href="https://github.com/diver-osint-ctf/writeups/blob/main/2025/military/object"
-                                    target="_blank">&gt; 解答と解説</a>
+                                    target="_blank">&gt; Answer and Explanations</a>
                             </div>
                         </div>
                     </div>
@@ -190,18 +207,19 @@
         <!-- Upcoming Events Section -->
         <section class="relative w-full bg-diver-500 text-white" id="upcoming-events">
             <div class="max-w-6xl mx-auto py-18 md:py-24 px-6">
-                <h2 class="text-4xl font-medium mb-6 md:mb-16 ">次回開催予定</h2>
+                <h2 class="text-4xl font-medium mb-6 md:mb-16">Upcoming Events</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
                     <div class="border border-white/30 rounded-sm p-12 space-y-8">
                         <img src="diver_osint_ctf_logo_white.svg" alt="DIVER OSINT CTF" class="h-8">
                         <div class="space-y-4">
                             <p class="text-lg font-medium">
-                                次回は2026年初夏に開催予定（オンライン）<br>
-                                初心者～上級者向け。Jeopardy形式<br>
-                                1チームあたり最大6人
+                                Next event: Early Summer 2026 (Online)<br>
+                                For beginners to experts. Jeopardy-style format<br>
+                                Maximum 6 members per team
                             </p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -209,34 +227,36 @@
         <!-- Past Challenges Section -->
         <section class="relative w-full bg-white text-diver-500" id="past-challenges">
             <div class="max-w-6xl mx-auto py-18 md:py-24 px-6">
-                <h2 class="text-4xl font-medium mb-6 md:mb-16 text-diver-500">過去の問題・解説</h2>
+                <h2 class="text-4xl font-medium mb-6 md:mb-16 text-diver-500">Past Challenges & Writeups</h2>
                 <div class="space-y-6 mb-16">
                     <p class="text-lg leading-relaxed text-diver-500/90">
-                        過去のDIVER OSINT CTFで出題された問題はGitHubで公開しています。検索結果が変わっているなど、出題当時と同じ難易度で取り組むことはできませんが、ぜひ参考にしてみてください。
+                        Past DIVER OSINT CTF challenges are available on GitHub. While the difficulty may vary from the
+                        original due to changing search results, they provide valuable learning opportunities.
                     </p>
                     <div class="flex justify-start">
                         <a href="https://github.com/diver-osint-ctf/writeups"
                             class="inline-flex items-center gap-2 px-6 py-3 bg-diver-500 text-white rounded-md hover:bg-diver-600 transition-colors">
                             <i class="fab fa-github"></i>
-                            <span>GitHub でチェック</span>
+                            <span>Check on GitHub</span>
                         </a>
                     </div>
 
                     <p class="text-lg leading-relaxed text-diver-500/90">
-                        また、参加者の皆様によってwriteup（参加記・解説）も公開されています。様々なアプローチを学ぶことができます。
+                        Additionally, participants have published writeups sharing various approaches to solving the
+                        challenges.
                     </p>
                     <div class="flex flex-wrap justify-start gap-4 mt-6">
                         <a href="https://zenn.dev/search?q=DIVER+OSINT+CTF&order=latest" target="_blank"
                             class="inline-flex items-center gap-2 px-6 py-3 bg-white text-diver-500 border border-diver-500 rounded-md hover:bg-diver-500 hover:text-white transition-colors">
-                            <span>Zennで検索</span>
+                            <span>Search on Zenn (JP)</span>
                         </a>
                         <a href="https://qiita.com/search?q=DIVER%20OSINT%20CTF&sort=created" target="_blank"
                             class="inline-flex items-center gap-2 px-6 py-3 bg-white text-diver-500 border border-diver-500 rounded-md hover:bg-diver-500 hover:text-white transition-colors">
-                            <span>Qiitaで検索</span>
+                            <span>Search on Qiita (JP)</span>
                         </a>
                         <a href="https://note.com/search?q=DIVER+OSINT+CTF" target="_blank"
                             class="inline-flex items-center gap-2 px-6 py-3 bg-white text-diver-500 border border-diver-500 rounded-md hover:bg-diver-500 hover:text-white transition-colors">
-                            <span>noteで検索</span>
+                            <span>Search on note (JP)</span>
                         </a>
                     </div>
                 </div>
@@ -246,9 +266,9 @@
         <!-- Partners Section -->
         <section class="relative w-full bg-white text-diver-500/80">
             <div class="max-w-6xl mx-auto py-12 md:py-24 px-6">
-                <h2 class="text-4xl font-medium mb-16 text-diver-500">パートナー</h2>
+                <h2 class="text-4xl font-medium mb-16 text-diver-500">Partners</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <a href="https://deepdive.or.jp/" target="_blank"
+                    <a href="https://deepdive.or.jp/en/" target="_blank"
                         class="flex items-center justify-center p-6 border border-diver-500/10 rounded-lg hover:border-diver-500/30 transition-colors">
                         <img src="partners/deepdive.png" alt="Partner 1" class="max-h-16">
                     </a>
@@ -259,13 +279,14 @@
         <!-- Contact Section -->
         <section class="relative w-full bg-white text-diver-500/80">
             <div class="max-w-6xl mx-auto py-12 md:py-24 px-6">
-                <h2 class="text-4xl font-medium mb-16 text-diver-500">お問い合わせ</h2>
+                <h2 class="text-4xl font-medium mb-16 text-diver-500">Contact</h2>
                 <div class="space-y-3 mb-16">
                     <p class="text-lg leading-relaxed text-diver-500/90">
-                        <a href="https://x.com/DIVER_OSINT_CTF" target="_blank"
-                            class="underline">公式Xアカウント</a>のDMからお問い合わせを受け付けております。
+                        Please contact us via DM on our <a href="https://x.com/DIVER_OSINT_CTF" target="_blank"
+                            class="underline">official X account</a>.
                     </p>
                 </div>
+            </div>
         </section>
 
         <!-- Footer -->
@@ -277,18 +298,19 @@
                         <p class="text-sm text-white/80">© 2025 DIVER OSINT CTF</p>
                     </div>
                     <div class="flex gap-6">
-                        <a href="https://x.com/DIVER_OSINT_CTF" class="text-white hover:text-white/80 transition-colors">
+                        <a href="https://x.com/DIVER_OSINT_CTF"
+                            class="text-white hover:text-white/80 transition-colors">
                             <i class="fab fa-x-twitter text-xl"></i>
                         </a>
-                        <a href="https://discord.diverctf.org/" class="text-white hover:text-white/80 transition-colors">
+                        <a href="https://discord.diverctf.org/"
+                            class="text-white hover:text-white/80 transition-colors">
                             <i class="fab fa-discord text-xl"></i>
                         </a>
                         <a href="https://github.com/diver-osint-ctf"
                             class="text-white hover:text-white/80 transition-colors">
                             <i class="fab fa-github text-xl"></i>
                         </a>
-                        <a href="https://ctftime.org/ctf/1111"
-                            class="text-white hover:text-white/80 transition-colors">
+                        <a href="https://ctftime.org/ctf/1111" class="text-white hover:text-white/80 transition-colors">
                             <i class="far fa-square-check fa-rotate-270 text-xl"></i>
                         </a>
                     </div>
