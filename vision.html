@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <meta property="og:title" content="DIVER OSINT CTF" />
+    <meta property="og:description"
+        content="DIVER OSINT CTF は現実世界指向の OSINT CTF（OSINTのコンテスト）です。" />
+    <meta property="og:url" content="https://diverctf.org/" />
+    <meta property="og:image" content="https://diverctf.org/ogp.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DIVER OSINT CTF" />
+    <title>VISION - DIVER OSINT CTF</title>
+</head>
+
+<body class="h-screen">
+
+    <!-- Main Content Container -->
+    <div class="relative w-full flex flex-col items-center font-notosans-with-fallback">
+        <!-- Navigation -->
+        <nav class="fixed top-0 w-full z-50 h-16 md:h-20 transition-all duration-500 bg-diver-500" id="navbar">
+            <div class="w-11/12 md:w-8/12 mx-auto flex justify-between text-white h-full items-center">
+            <a href="https://diverctf.org"><img src="diver_osint_ctf_logo_white.svg" alt="DIVER OSINT CTF" class="h-4 md:h-5"></a>
+            <div class="text-base md:text-xl">
+                <span class="font-bold">JP</span> | <a href="./en.html" class="hover:underline">EN</a>
+            </div>
+            </div>
+        </nav>
+
+        <!-- About Section -->
+        <section class="relative w-full bg-white text-diver-500">
+            <div class="max-w-6xl mx-auto py-12 md:py-24 px-4 md:px-6">
+                <h2 class="text-3xl md:text-4xl font-bold md:mt-24 mb-8 md:mb-12">DIVER OSINT CTFが競技の実施を通じて目指すもの</h2>
+                <h3 class="text-3xl font-medium my-6">実務につながるスキルを持った人材の育成</h3>
+                <div class="space-y-6 mb-16 text-base text-diver-500/90">
+                    <p class="leading-relaxed ">
+                        DIVER OSINT CTFでは、手法・題材ともに、可能な限り現実世界におけるOSINTに繋がる問題を出題することを目指しています。これを「現実世界指向」と表現しています。
+                    </p>
+
+                    <p class="leading-relaxed">
+                        「OSINT」と一口にいっても、その領域は多岐にわたります。たとえば、あくまで一例として以下のようなものが挙げられるでしょう。DIVER OSINT CTFは特定分野に偏らず、幅広い対象と手法を扱いたいと考えています。
+                    </p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>安全保障 : 衛星画像からの軍事的動向の分析、戦場からソーシャルメディアに投稿された情報を基にした情報の分析</li>
+                        <li>公共政策・国際情勢 : 報道発表を手掛かりにした国家動向や指導者の意向の推測</li>
+                        <li>情報セキュリティ : 攻撃対象領域の把握に向けたWebサイトやサーバーなどの調査</li>
+                        <li>偽情報の分析 : 動画・画像の撮影地や時期の精査、史料の調査による言説の検証</li>
+                        <li>人物調査 : SNSからの行動・関係性の分析</li>                           
+                    </ul>
+
+                    <p class="leading-relaxed">
+                        また、OSINTにおいて公開情報の収集は出発点にすぎません。真に重要なのは、集めた情報を統合し、妥当な仮説・示唆（インサイト）を導くこと――すなわち Intelligence の部分です。競技の特性上、正誤判定型の設問が中心になりがちですが、DIVER OSINT CTF 2025からは記述式設問を一部導入し、分析・評価能力そのものを問う出題も行っています。
+                    </p>
+
+                    <p class="leading-relaxed">
+                        もちろん、実務のOSINTを競技という枠で完全再現するのは容易ではありません。それでも現実世界を見据えた問題構成を実現するため、パートナー組織の専門家との連携や多角的な情報収集、参加者からのフィードバックを重ね、問題の質を継続的に高めています。これにより、参加を通じて実務を意識したスキル獲得が可能になることを目指しています。
+                    </p>
+                </div>
+
+                <h3 class="text-3xl font-medium my-6">OSINTスキルを持つ人口の拡大</h3>
+                <div class="space-y-6 mb-16 text-base text-diver-500/90">
+                    <p class="leading-relaxed ">
+                        OSINTは実務者に限らず、日常生活でも役立ちます。氾濫する偽情報の見極めや、攻撃者視点に立って個人情報・機密の漏洩防止を図るなど、様々な場面において重要になるスキルセットです。こうした力を持つ人が増えれば、社会全体の情報リテラシー向上にも寄与します。
+                    </p>
+
+                    <p class="leading-relaxed">
+                        一方で、従来型の「情報リテラシー教育・研修」は参加のモチベーションを保ちにくい側面があります。そこでDIVER OSINT CTFは競技形式を採用し、楽しさと達成感によって参加の障壁を下げています。フランス語圏のOSINT CTFは、エンターテインメント性と本格的な調査・分析要求を両立させることで、コミュニティの裾野を広げつつ参加者のスキルを引き上げてきました。DIVER OSINT CTFはその取り組みを参考にしつつ、前述の「現実世界指向」を軸に、OSINTのスキルとマインドセットを持つ人材の間口をいっそう広げていきます。
+                    </p>
+
+                    <p class="leading-relaxed ">
+                        いわば、「楽しみながら参加していたら、いつの間にか現実世界で通用するスキルが身についていた」というCTFが提供できることを目指しています。<br>
+                        また、CTFをきっかけに、現実世界で活躍する人材が一人でも多く生まれることを願っています。
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="relative w-full bg-diver-500 text-white py-8 md:py-12">
+            <div class="max-w-6xl mx-auto px-4 md:px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
+                    <div class="space-y-2">
+                        <img src="diver_osint_ctf_logo_white.svg" alt="DIVER OSINT CTF" class="h-5 mb-4">
+                        <p class="text-sm text-white/80">© 2025 DIVER OSINT CTF</p>
+                    </div>
+                    <div class="flex gap-6">
+                        <a href="https://x.com/DIVER_OSINT_CTF" class="text-white hover:text-white/80 transition-colors">
+                            <i class="fab fa-x-twitter text-xl"></i>
+                        </a>
+                        <a href="https://discord.diverctf.org/" class="text-white hover:text-white/80 transition-colors">
+                            <i class="fab fa-discord text-xl"></i>
+                        </a>
+                        <a href="https://github.com/diver-osint-ctf"
+                            class="text-white hover:text-white/80 transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="https://ctftime.org/ctf/1111"
+                            class="text-white hover:text-white/80 transition-colors">
+                            <i class="far fa-square-check fa-rotate-270 text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
