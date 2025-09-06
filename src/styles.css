@@ -3,5 +3,6 @@
 
 @theme {
   --color-diver-500: #003366;
-  --font-notosans-with-fallback:  "Noto Sans", "Noto Sans JP", sans-serif;
+  --color-swimmer-500: #2d83e0;
+  --font-notosans-with-fallback: "Noto Sans", "Noto Sans JP", sans-serif;
 }
