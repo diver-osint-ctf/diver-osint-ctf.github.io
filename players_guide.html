@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <meta property="og:title" content="DIVER OSINT CTF" />
+    <meta property="og:description" content="DIVER OSINT CTF は現実世界指向の OSINT CTF（OSINTのコンテスト）です。" />
+    <meta property="og:url" content="https://diverctf.org/" />
+    <meta property="og:image" content="https://diverctf.org/ogp.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DIVER OSINT CTF" />
+    <title>プレイヤーズガイド - DIVER OSINT CTF</title>
+</head>
+
+<body class="h-screen">
+
+    <!-- Main Content Container -->
+    <div class="relative w-full flex flex-col items-center font-notosans-with-fallback">
+        <!-- Navigation -->
+        <nav class="fixed top-0 w-full z-50 h-16 md:h-20 transition-all duration-500 bg-diver-500" id="navbar">
+            <div class="w-11/12 md:w-8/12 mx-auto flex justify-between text-white h-full items-center">
+                <a href="https://diverctf.org"><img src="diver_osint_ctf_logo_white.svg" alt="DIVER OSINT CTF"
+                        class="h-4 md:h-5"></a>
+                <div class="text-base md:text-xl">
+                    <span class="font-bold">JP</span> | <a href="./en.html" class="hover:underline">EN</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- About Section -->
+        <section class="relative w-full bg-white text-diver-500">
+            <div class="max-w-6xl mx-auto py-12 md:py-24 px-4 md:px-6">
+                <h2 class="text-3xl md:text-4xl font-bold md:mt-24 mb-8 md:mb-12">プレイヤーズガイド</h2>
+                <div class="space-y-3 mb-16 text-base text-diver-500/90">
+                    <section class="relative w-full bg-white text-diver-500">
+                        <div class="max-w-6xl mx-auto py-12 px-4 md:px-6">
+                            <h3 class="text-2xl md:text-3xl font-bold mb-8 md:mb-12">よくある質問（Q&A）</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-6">
+                                <div class="border border-diver-500/30 rounded-sm p-3 md:p-6 space-y-4">
+                                    <div class="space-y-4">
+                                        <p class="text-md font-bold">Q. 参加に必要なものは？</p>
+                                        <p class="text-md">A.
+                                            インターネット接続とパソコン・スマートフォンがあれば参加できます。参加登録や解答はスマートフォンだけでも可能ですが、パソコンが必要になる問題も多いため、なるべくパソコンからの参加をおすすめします。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="border border-diver-500/30 rounded-sm p-3 md:p-6 space-y-4">
+                                    <div class="space-y-4">
+                                        <p class="text-md font-bold">Q. 参加にあたっての規則などは？</p>
+                                        <p class="text-md">A.
+                                            CTFイベントごとにルールと規約が公開されます。そちらをご参照ください。</p>
+                                    </div>
+                                </div>
+                                <div class="border border-diver-500/30 rounded-sm p-3 md:p-6 space-y-4">
+                                    <div class="space-y-4">
+                                        <p class="text-md font-bold">Q. 初心者でも参加できますか？</p>
+                                        <p class="text-md">A. 大歓迎です。初参加で上位にランクインする方々もたくさんいらっしゃいます。
+                                            また、特に "SWIMMER OSINT CTF"は初心者をメインターゲットとしており、入門レベルの問題を多く用意しております。</p>
+                                    </div>
+                                </div>
+
+                                <div class="border border-diver-500/30 rounded-sm p-3 md:p-6 space-y-4">
+                                    <div class="space-y-4">
+                                        <p class="text-md font-bold">Q. 1人でも参加できますか？</p>
+                                        <p class="text-md">A.
+                                            個人（1人チーム）でも参加可能です。ただし、問題の分量はチームを想定したものとなっているため、時間内の完答は難しくなるかもしれません。</p>
+                                    </div>
+                                </div>
+                                <div class="border border-diver-500/30 rounded-sm p-3 md:p-6 space-y-4">
+                                    <div class="space-y-4">
+                                        <p class="text-md font-bold">Q. 謎解きゲームのようなものですか？</p>
+                                        <p class="text-md">A.
+                                            いいえ。
+                                            OSINT
+                                            CTFはあくまで情報調査の競技です。もちろん、結果的に楽しんでいただけるのであれば嬉しいですが、エンターテイメントとして作られているわけではない点にはご留意ください。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="border border-diver-500/30 rounded-sm p-3 md:p-6 space-y-4">
+                                    <div class="space-y-4">
+                                        <p class="text-md font-bold">Q. 写真から場所を特定する、Geoguessrのようなゲームですか？</p>
+                                        <p class="text-md">A.
+                                            いいえ。
+                                            画像から撮影場所を当てることを「ジオロケーション」と呼ぶのですが、OSINT
+                                            CTFではジオロケーションはあくまで一部の問題に過ぎません。CTF中では、ジオロケーション以外にも様々なタイプの問題が出題され、それらを複合したインテリジェンス能力が求められます。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="border border-diver-500/30 rounded-sm p-3 md:p-6 space-y-4">
+                                    <div class="space-y-4">
+                                        <p class="text-md font-bold">Q. 参加しても安全ですか？</p>
+                                        <p class="text-md">A.
+                                            DIVER OSINT
+                                            CTFでは、参加者の安全を最優先に考えています。問題はすべて日本国の法令の下で合法的にアクセスできる公開情報に基づいており、サイバー攻撃などの違法行為を求めることはありません。ただし、実際のオンライン上を調査する以上、プレイヤーが間違って危険なサイトを訪問してしまう可能性は否定できません。参加にあたっては、自己責任のもと、適切なセキュリティ対策を講じた上で行うようお願いいたします。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="border border-diver-500/30 rounded-sm p-3 md:p-6 space-y-4">
+                                    <div class="space-y-4">
+                                        <p class="text-md font-bold">Q. ショッキングな画像・映像などに触れることはありますか？</p>
+                                        <p class="text-md">A.
+                                            はい。現実の事象を調査する競技のため、問題によっては戦争・災害・事件・事故といった、ショッキングな映像や画像を調査するケースがあります。解答の過程でこのような情報に触れる必要がある問題については、事前にその旨が記載されています。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="border border-diver-500/30 rounded-sm p-3 md:p-6 space-y-4">
+                                    <div class="space-y-4">
+                                        <p class="text-md font-bold">Q. 競技時間中は常に参加していないといけないのですか？</p>
+                                        <p class="text-md">A.
+                                            順位は早く解いた人の方が上になりますが、途中参加・途中離脱可能です。競技時間が長いので、適宜休憩なども取りましょう。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="border border-diver-500/30 rounded-sm p-3 md:p-6 space-y-4">
+                                    <div class="space-y-4">
+                                        <p class="text-md font-bold">Q. 参加している様子をSNSや動画サイトなどで実況していいですか？</p>
+                                        <p class="text-md">A. いいえ。
+                                            CTFは競技です。あなたの試行内容や解答を他者に漏洩することを固く禁止しており、競技時間中の実況行為は規約により固く禁じます。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="border border-diver-500/30 rounded-sm p-3 md:p-6 space-y-4">
+                                    <div class="space-y-4">
+                                        <p class="text-md font-bold">Q. 競技終了後、ブログや動画で参加レポートを書いていいですか？</p>
+                                        <p class="text-md">A. はい、競技終了後であれば大歓迎です！CTFでは、競技終了後に "writeup"（ライトアップ）
+                                            と呼ばれる参加記を書く文化があります。ブログ記事や動画など、媒体は問いませんので、どのように問題を解いたかを共有していただけると、他の参加者の学びにもなり、コミュニティ全体の活性化にも繋がります。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="relative w-full bg-diver-500 text-white py-8 md:py-12">
+            <div class="max-w-6xl mx-auto px-4 md:px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
+                    <div class="space-y-2">
+                        <img src="diver_osint_ctf_logo_white.svg" alt="DIVER OSINT CTF" class="h-5 mb-4">
+                        <p class="text-sm text-white/80">© 2025 DIVER OSINT CTF</p>
+                    </div>
+                    <div class="flex gap-6">
+                        <a href="https://x.com/DIVER_OSINT_CTF"
+                            class="text-white hover:text-white/80 transition-colors">
+                            <i class="fab fa-x-twitter text-xl"></i>
+                        </a>
+                        <a href="https://discord.diverctf.org/"
+                            class="text-white hover:text-white/80 transition-colors">
+                            <i class="fab fa-discord text-xl"></i>
+                        </a>
+                        <a href="https://github.com/diver-osint-ctf"
+                            class="text-white hover:text-white/80 transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="https://ctftime.org/ctf/1111" class="text-white hover:text-white/80 transition-colors">
+                            <i class="far fa-square-check fa-rotate-270 text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
