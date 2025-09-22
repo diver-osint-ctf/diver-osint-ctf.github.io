@@ -10,7 +10,9 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
-                en: resolve(__dirname, 'en.html')
+                en: resolve(__dirname, 'en.html'),
+                vision: resolve(__dirname, 'vision.html'),
+                players_guide: resolve(__dirname, 'players_guide.html')
             }
         }
     }
