@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <meta property="og:title" content="DIVER OSINT CTF" />
+    <meta property="og:description" content="DIVER OSINT CTF は現実世界指向の OSINT CTF（OSINTのコンテスト）です。" />
+    <meta property="og:url" content="https://diverctf.org/" />
+    <meta property="og:image" content="https://diverctf.org/ogp.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DIVER OSINT CTF" />
+    <title>Flag の提出方法 - DIVER OSINT CTF</title>
+</head>
+
+<body class="h-screen">
+    <div class="relative w-full flex flex-col items-center font-notosans-with-fallback bg-white text-diver-500">
+        <nav class="fixed top-0 w-full z-50 h-16 md:h-20 transition-all duration-500 bg-diver-500" id="navbar">
+            <div class="w-11/12 md:w-8/12 mx-auto flex justify-between text-white h-full items-center">
+                <a href="https://diverctf.org"><img src="diver_osint_ctf_logo_white.svg" alt="DIVER OSINT CTF" class="h-4 md:h-5"></a>
+                <div class="text-base md:text-xl">
+                    <span class="font-bold">JP</span> | <a href="./en.html" class="hover:underline">EN</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="relative w-full bg-white text-diver-500 pt-24 md:pt-28">
+            <div class="max-w-6xl mx-auto py-10 md:py-16 px-4 md:px-6">
+                <h1 class="text-3xl md:text-4xl font-bold mb-8 md:mb-10">Flag の提出方法 / About Flag Submission</h1>
+                <div class="flex flex-wrap gap-3 text-sm text-white mb-10">
+                    <a href="#flag-en" class="bg-diver-500 hover:bg-diver-400 transition-colors rounded-sm px-3 py-2">Jump to English</a>
+                </div>
+                <p class="text-sm text-diver-500/80 mb-10">英語版はこの下にあります。 / English follows Japanese version.</p>
+
+                <article class="space-y-10 text-base leading-relaxed text-diver-500/90">
+                    <section class="space-y-4" id="flag-jp">
+                        <h2 class="text-2xl md:text-3xl font-bold">Flag（解答） の提出方法について [日本語 / JAPANESE]</h2>
+                    </section>
+
+                    <section class="space-y-4">
+                        <h3 class="text-xl md:text-2xl font-bold">Flag とは</h3>
+                        <p>CTFにおける「答え」のことです。CTFに初めて参加する方は、最後までこのページをお読みください。</p>
+                    </section>
+
+                    <section class="space-y-4">
+                        <h3 class="text-xl md:text-2xl font-bold">Flag の送信方法</h3>
+                        <p>各問題ごとの下部にある <strong>Flag</strong> の入力欄に入力して送信してください。</p>
+                        <img src="./flag_guide_images/CTFd_flag_UI.png" alt="Flag UI" class="rounded-md border border-diver-500/20">
+                    </section>
+
+                    <section class="space-y-4">
+                        <h3 class="text-xl md:text-2xl font-bold">通常の Flag について</h3>
+                        <p>SWIMMER OSINT CTF における Flag は、特に記載がない限りすべて <code>SWIMMER{xxxxxxx}</code> のような形式となります。<br>たとえば、問題の答えが <code>VXX7+396</code> だと思った時は、<code>SWIMMER{VXX7+396}</code> という文字列を送信してください。英数字 <code>SWIMMER</code> および波括弧 <code>{</code> <code>}</code> 部分は <strong>半角</strong> です。また、<code>SWIMMER</code> は大文字です。</p>
+                        <p>Flag 内には、スペースやハイフン、アンダーバーなどを含むことができます。そのため、Flag は以下のような形になることがあります。</p>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li><code>SWIMMER{Gare du Champ de Mars - Tour Eiffel}</code></li>
+                            <li><code>SWIMMER{2025年日本国際博覧会}</code></li>
+                            <li><code>SWIMMER{청와대}</code></li>
+                            <li><code>SWIMMER{Emirates_UAE_EK}</code></li>
+                        </ul>
+                        <p>すべての問題にFlag形式の見本が記されているので、問題ごとの指示に従ってください。</p>
+                    </section>
+
+                    <section class="space-y-4">
+                        <h4 class="text-lg md:text-xl font-semibold">Flag形式のチェックについて</h4>
+                        <p><code>SWIMMER{ }</code> 部分の誤入力を防ぐため、<strong>正誤判定を行う前に</strong>、まずはFlag形式を自動でチェックします。<br><strong>Flag format does not match the required pattern</strong> と表示されたときは、形式が一致していません。<br>この場合、形式を修正してから再度送信すると、正誤判定が行われます。</p>
+                        <img src="./flag_guide_images/flag_validator.gif" alt="flag demonstration" width="400" class="rounded-md border border-diver-500/20">
+                    </section>
+
+                    <section class="space-y-4">
+                        <h3 class="text-xl md:text-2xl font-bold">座標（緯度経度）の Flag について</h3>
+                        <p>座標（緯度経度）が Flag となる問題では、マップ上でピンを立てたのち、送信ボタンを押すことで Flag を送信できます。マップ内の虫眼鏡アイコンから、座標や地名を検索することも可能です。</p>
+                        <img src="./flag_guide_images/geo_demo.gif" alt="geo demonstration" width="400" class="rounded-md border border-diver-500/20">
+                        <p>解答欄における青い円は正解における許容誤差を示します。<br>例えば、ある問題の正解が以下のような緑の点線の範囲で設定されていたとします。<br>このとき、正解は下図のようになります。つまり、解答は青い円の範囲ではなく、ピンの位置で判断します。</p>
+                        <img src="./flag_guide_images/geo_circle.png" alt="geo" class="rounded-md border border-diver-500/20">
+                        <p>なお、本機能については<a href="https://github.com/degun-osint/geo_challenges" class="underline text-diver-500 hover:text-diver-400" target="_blank" rel="noopener noreferrer">Degun 氏が開発した geo_challenges プラグイン</a>をカスタマイズして利用しています。</p>
+                    </section>
+
+                    <section class="space-y-4">
+                        <h3 class="text-xl md:text-2xl font-bold">不正解によるペナルティについて</h3>
+                        <p>すべての問題は、ブルートフォース（総当たり）を防ぐため、連続不正解によるペナルティが設定されています。<strong>誤った提出を行うたびに、その問題は 15 分間再提出ができなくなります。</strong> ペナルティに関わる誤答は個人単位ではなく、チーム単位でカウントされることに注意してください。</p>
+                        <p>ただし、最初の 3 回まではペナルティが適用されません。</p>
+                        <div class="bg-diver-50 border border-diver-500/20 rounded-sm p-4 text-sm">
+                            <pre class="whitespace-pre-wrap"><code>12:00 1回目の提出: 誤答 (引き続き送信可能)
+12:01 2回目の提出: 誤答 (引き続き送信可能)
+12:02 3回目の提出: 誤答 (引き続き送信可能)
+12:03 4回目の提出: 誤答 (ペナルティ適用: ここから15分間はこの問題への再提出不可)
+12:18 5回目の提出: 正答</code></pre>
+                        </div>
+                        <img src="./flag_guide_images/penalty_demo.gif" alt="penalty demonstration" width="400" class="rounded-md border border-diver-500/20">
+                    </section>
+
+                    <section class="space-y-4">
+                        <h3 class="text-xl md:text-2xl font-bold">試行回数制限について</h3>
+                        <p>問題によっては、解答を試行する回数に制限があります。<br>たとえば問題文の下に <code>1/5 attempts</code> と表示されていた場合、その問題は 5 回までの試行回数制限があり、あなたのチームはそれをすでに 1 回使っているという状況を示しています。<br>この場合、5 回すべてを使い果たすと、その問題に解答することはできなくなります。</p>
+                        <img src="./flag_guide_images/sample_attempt.png" alt="sample_attempt_limit" width="400" class="rounded-md border border-diver-500/20">
+                        <p>また、試行回数制限は個人単位ではなく、<strong>チーム単位</strong> でカウントされることに注意してください。</p>
+                        <div class="bg-diver-50 border border-diver-500/20 rounded-sm p-4 text-sm">
+                            <pre class="whitespace-pre-wrap"><code>13:00 1回目の提出: 誤答 (引き続き送信可能)
+14:00 2回目の提出: 誤答 (引き続き送信可能)
+15:00 3回目の提出: 誤答 (引き続き送信可能)
+16:00 4回目の提出: 誤答 (引き続き送信可能)
+17:00 5回目の提出: 誤答 (最後の提出)
+18:00 6回目の提出: 受理されない (試行回数制限により、この問題にはこれ以上送信できない)</code></pre>
+                        </div>
+                        <p>なお、試行回数制限と不正解によるペナルティは同時に適用されます。試行回数制限がある問題において、<strong>ペナルティによって Flag の送信ができなかった場合、解答可能な回数は減りません</strong>。</p>
+                        <p>しかし、CTFシステムの仕様上、Web ページ上では回数が 1 回減ったような表示になってしまいます（システム内では実際には減っていません）。そのため、誤答してしまった問題に再挑戦するときは <strong>Flagを送信する前にページを再読み込みするか、問題を開き直す</strong> ことをおすすめします。</p>
+                        <div class="bg-diver-50 border border-diver-500/20 rounded-sm p-4 text-sm">
+                            <pre class="whitespace-pre-wrap"><code>12:01 1回目の提出: 誤答 (引き続き送信可能)
+12:02 2回目の提出: 誤答 (引き続き送信可能)
+12:03 3回目の提出: 誤答 (引き続き送信可能)
+12:04 4回目の提出: 誤答 (以降15分間、不正解ペナルティによりこの問題にはフラグを送信できない)
+12:05 5回目の提出の試み: 受理されない (システムの仕様上、回答可能回数が一時的に 0 回と表示される)
+12:19 5回目の提出: 誤答 (最後の提出)
+12:20以降 6回目の提出: 受理されない (試行回数制限により、この問題にはこれ以上送信できない)</code></pre>
+                        </div>
+                        <p>この時、下記のようなエラーメッセージが表示されます。この画像は、ユーザーが 3 回不正解した後、4 回目の送信を行った時のものです。4 回目はペナルティによって送信できなかったため、回答可能な回数は減りません。しかし、Web ページ上では回数が減ったような表示（4/10 attempts）になってしまっています。</p>
+                        <img src="./flag_guide_images/penalty_error.png" alt="error_message" width="400" class="rounded-md border border-diver-500/20">
+                    </section>
+
+                    <section class="space-y-4">
+                        <h3 class="text-xl md:text-2xl font-bold">入力ミスについて</h3>
+                        <p>上記の通り、ペナルティがあるため、<strong>入力ミスには気をつけてください。</strong> 例えば、 <code>SWIM{xxxxx}</code>や<code>{xxxxx}</code>、といったFlag形式の入力ミスがあった場合、これは答え部分が正しくても誤答として判定されます。<br>特に、解答回数に制限がある問題では気をつけてください。平等性のため、原則として救済措置はありません。</p>
+                    </section>
+
+                    <section class="space-y-4">
+                        <h3 class="text-xl md:text-2xl font-bold">【重要】日本語など、英語以外の入力環境について</h3>
+                        <p>CTFシステムの仕様上、解答欄で日本語の変換を行うと、<strong>Enter キーの操作によって、入力途中でも送信判定されてしまい不正解になる</strong> ことがあります。<br>解答回数の制限を使い果たさないため、メモ帳などで Flag 形式を整えた上でコピー・アンド・ペーストして解答することを強く推奨します。<br>こちらも原則として救済措置はありません。</p>
+                    </section>
+
+                    <section class="space-y-4">
+                        <h3 class="text-xl md:text-2xl font-bold">表記ゆれについて</h3>
+                        <p>運営者は、作問時に表記ゆれや別の表記を想定して複数の解を設定しています。</p>
+                        <p>たとえば、答えが「羽田空港」になる問題があったとしましょう。もし、その問題において「東京国際空港」「HND」「RJTT」という解答も正しいと想定されるなら、これらをいずれも正解として設定しています。<br>ただし、問題文に「IATA空港コードで答えよ」と記載されていた場合、「HND」のみが正解として設定されているでしょう。</p>
+                        <p>問題文の設定には万全を期していますが、万が一「この表記は正解ではないのか」と疑わしい問題があった場合、#ask-for-admin チャンネルから問い合わせを行ってください。</p>
+                    </section>
+
+                    <hr class="border-diver-500/30">
+
+                    <section class="space-y-6" id="flag-en">
+                        <h2 class="text-2xl md:text-3xl font-bold">About Flag Submission [英語 / ENGLISH]</h2>
+                        
+                        <p>A "Flag" is the "answer" in CTF. Flags are submitted through the input field below each challenge to determine if your answer is correct or incorrect. If this is your first time participating in a CTF, please read this page to the end.</p>
+
+                        <img src="./flag_guide_images/CTFd_flag_UI.png" alt="Flag UI" class="rounded-md border border-diver-500/20">
+
+                        <div class="space-y-3">
+                            <h3 class="text-xl md:text-2xl font-bold">Usual Flags</h3>
+                            <p>In the SWIMMER OSINT CTF, unless otherwise specified, all flags are in the format <code>SWIMMER{xxxxxxx}</code>. For example, if you think the answer is <code>VXX7+396</code>, submit the string <code>SWIMMER{VXX7+396}</code>. The alphanumeric characters <code>SWIMMER</code> and the braces <code>{</code> <code>}</code> are <strong>ASCII</strong> characters. Also, <code>SWIMMER</code> must be uppercase.</p>
+                            <p>Flags can contain spaces, hyphens, underscores, Japanese characters, and more. Therefore, flags may look like the following:</p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li><code>SWIMMER{Gare du Champ de Mars - Tour Eiffel}</code></li>
+                                <li><code>SWIMMER{2025年日本国際博覧会}</code></li>
+                                <li><code>SWIMMER{청와대}</code></li>
+                                <li><code>SWIMMER{Emirates_UAE_EK}</code></li>
+                            </ul>
+                            <p>Each challenge includes a flag format example, so please follow the instructions for each challenge.</p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <h4 class="text-lg md:text-xl font-semibold">Flag Validation</h4>
+                            <p>To prevent typos in the <code>SWIMMER{ }</code> part of the flag, the system automatically checks the flag format before judging whether your submission is correct or incorrect. If you see <strong>Flag format does not match the required pattern</strong>, your input does not match the required format. In that case, fix the format and submit again; the correctness check will then be performed.</p>
+                            <img src="./flag_guide_images/flag_validator.gif" alt="flag demonstration" width="400" class="rounded-md border border-diver-500/20">
+                        </div>
+
+                        <div class="space-y-3">
+                            <h3 class="text-xl md:text-2xl font-bold">Coordinate Flags</h3>
+                            <p>For challenges where the coordinates (latitude and longitude) are the flag, you can submit the flag by placing a pin on the map and then pressing the Submit button. You can also search for coordinates and place names using the magnifying glass icon in the map.</p>
+                            <img src="./flag_guide_images/geo_demo.gif" alt="geo demonstration" width="400" class="rounded-md border border-diver-500/20">
+                            <p>The blue circle in the answer field indicates the tolerance for the correct answer. For example, suppose the correct answer to a challenge is set within a range indicated by a green dotted line as shown below. In this case, the correct answer would be as shown in the diagram. In other words, the answer is determined by the position of the pin, not by the range of the blue circle.</p>
+                            <img src="./flag_guide_images/geo_circle.png" alt="geo" class="rounded-md border border-diver-500/20">
+                            <p>Note that this feature is based on a customization of the <a href="https://github.com/degun-osint/geo_challenges" class="underline text-diver-500 hover:text-diver-400" target="_blank" rel="noopener noreferrer">geo_challenges plugin developed by Degun</a>.</p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <h3 class="text-xl md:text-2xl font-bold">Penalty for Incorrect Answers</h3>
+                            <p>All challenges have penalties for consecutive incorrect answers to prevent brute-force attacks. <strong>Each time you submit an incorrect answer, you will be unable to resubmit to that challenge for 15 minutes.</strong> Note that incorrect answers related to penalties are counted per team, not per individual.</p>
+                            <p>However, <strong>penalties do not apply for the first 3 attempts.</strong></p>
+                            <div class="bg-diver-50 border border-diver-500/20 rounded-sm p-4 text-sm">
+                                <pre class="whitespace-pre-wrap"><code>12:00 1st submission: Wrong answer (can continue submitting)
+12:01 2nd submission: Wrong answer (can continue submitting)
+12:02 3rd submission: Wrong answer (can continue submitting)
+12:03 4th submission: Wrong answer (Penalty applied: cannot resubmit to this challenge for the next 15 minutes)
+12:18 5th submission: Correct answer</code></pre>
+                            </div>
+                            <img src="./flag_guide_images/penalty_demo.gif" alt="penalty demonstration" width="400" class="rounded-md border border-diver-500/20">
+                        </div>
+
+                        <div class="space-y-3">
+                            <h3 class="text-xl md:text-2xl font-bold">Attempt Limits</h3>
+                            <p>Some challenges have a limit on the number of attempts to solve them. For example, if you see <code>1/5 attempts</code> below the challenge text, this indicates that the challenge has a limit of 5 attempts and your team has already used 1 of them. In this case, once all 5 attempts are used, you will no longer be able to answer the challenge.</p>
+                            <img src="./flag_guide_images/sample_attempt.png" alt="sample_attempt_limit" width="400" class="rounded-md border border-diver-500/20">
+                            <p>Also note that attempt limits are counted <strong>per team</strong>, not per individual.</p>
+                            <div class="bg-diver-50 border border-diver-500/20 rounded-sm p-4 text-sm">
+                                <pre class="whitespace-pre-wrap"><code>13:00 1st submission: Wrong answer (can continue submitting)
+14:00 2nd submission: Wrong answer (can continue submitting)
+15:00 3rd submission: Wrong answer (can continue submitting)
+16:00 4th submission: Wrong answer (can continue submitting)
+17:00 5th submission: Wrong answer (last submission)
+18:00 6th submission: Not accepted (cannot submit to this challenge anymore due to attempt limit)</code></pre>
+                            </div>
+                            <p>Note that attempt limits and penalties for incorrect answers are applied simultaneously. For challenges with attempt limits, <strong>if a flag submission fails due to a penalty, the number of available attempts does not decrease</strong>.</p>
+                            <p>However, due to CTF system specifications, the web page may display as if the count has decreased by 1 (though it hasn't actually decreased in the system). Therefore, when retrying a challenge you answered incorrectly, it is recommended to <strong>reload the page or reopen the challenge before submitting a flag</strong>.</p>
+                            <div class="bg-diver-50 border border-diver-500/20 rounded-sm p-4 text-sm">
+                                <pre class="whitespace-pre-wrap"><code>12:01 1st submission: Wrong answer (can continue submitting)
+12:02 2nd submission: Wrong answer (can continue submitting)
+12:03 3rd submission: Wrong answer (can continue submitting)
+12:04 4th submission: Wrong answer (cannot submit flags to this challenge for the next 15 minutes due to incorrect answer penalty)
+12:05 5th submission attempt: Not accepted (due to system specifications, the number of available attempts is temporarily displayed as 0)
+12:19 5th submission: Wrong answer (last submission)
+12:20 onwards 6th submission: Not accepted (cannot submit to this challenge anymore due to attempt limit)</code></pre>
+                            </div>
+                            <p>At this time, an error message like the one below will be displayed. This image shows what happens when a user submits a 4th attempt after 3 incorrect answers. Since the 4th attempt could not be submitted due to the penalty, the number of available attempts does not decrease. However, the web page displays as if the count has decreased (4/10 attempts).</p>
+                            <img src="./flag_guide_images/penalty_error.png" alt="error_message" width="400" class="rounded-md border border-diver-500/20">
+                        </div>
+
+                        <div class="space-y-3">
+                            <h3 class="text-xl md:text-2xl font-bold">About Input Mistakes</h3>
+                            <p>As mentioned above, due to penalties, <strong>please be careful of input mistakes.</strong> For example, if there is a flag format typo such as <code>SWIM{xxxxx}</code> or <code>{xxxxx}</code>, this will be judged as incorrect even if the answer portion is correct. Be particularly careful with challenges that have a limited number of attempts. As a rule, there are no relief measures for the sake of fairness.</p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <h3 class="text-xl md:text-2xl font-bold">[Important] Non-English Input Environments (such as Japanese IME)</h3>
+                            <p>Due to CTF system specifications, if you convert Japanese or other languages in the answer field, <strong>pressing the Enter key may result in submission judgment even if you are in the middle of typing, resulting in an incorrect answer</strong>. To avoid exhausting the attempt limit, it is strongly recommended to prepare the flag format in a text editor or similar and then copy and paste it as your answer. As a rule, there are no relief measures for this as well.</p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <h3 class="text-xl md:text-2xl font-bold">About Notation Variations</h3>
+                            <p>Organizers set multiple acceptable answers anticipating notation variations and alternative notations when creating challenges.</p>
+                            <p>For example, suppose there is a challenge where the answer is "Haneda Airport". If "Tokyo International Airport", "HND", and "RJTT" are also considered correct answers for that challenge, all of these are set as correct answers. However, if the challenge text states "Answer with the IATA airport code", only "HND" would be set as the correct answer.</p>
+                            <p>We make every effort to properly configure challenges, but if you encounter a challenge where you suspect "isn't this notation correct?", please inquire through the #ask-for-admin channel.</p>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </section>
+
+        <footer class="relative w-full bg-diver-500 text-white py-8 md:py-12">
+            <div class="max-w-6xl mx-auto px-4 md:px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
+                    <div class="space-y-2">
+                        <img src="diver_osint_ctf_logo_white.svg" alt="DIVER OSINT CTF" class="h-5 mb-4">
+                        <p class="text-sm text-white/80">© 2025 DIVER OSINT CTF</p>
+                    </div>
+                    <div class="flex gap-6">
+                        <a href="https://x.com/DIVER_OSINT_CTF" class="text-white hover:text-white/80 transition-colors"><i class="fab fa-x-twitter text-xl"></i></a>
+                        <a href="https://discord.diverctf.org/" class="text-white hover:text-white/80 transition-colors"><i class="fab fa-discord text-xl"></i></a>
+                        <a href="https://github.com/diver-osint-ctf" class="text-white hover:text-white/80 transition-colors"><i class="fab fa-github text-xl"></i></a>
+                        <a href="https://ctftime.org/ctf/1111" class="text-white hover:text-white/80 transition-colors"><i class="far fa-square-check fa-rotate-270 text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
