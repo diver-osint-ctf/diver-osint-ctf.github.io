@@ -1,0 +1,16 @@
+{
+  "name": "diver-web",
+  "build": {
+    "context": "..",
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bradlc.vscode-tailwindcss",
+        "anthropic.claude-code"
+      ]
+    }
+  },
+  "postCreateCommand": "pnpm install"
+}
