@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://diverctf.org/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diverctf.org/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diverctf.org/en.html" />
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://diverctf.org/en.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diverctf.org/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diverctf.org/en.html" />
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://diverctf.org/vision.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diverctf.org/players_guide.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diverctf.org/about_flags.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diverctf.org/rules_swimmer26.html</loc>
+    <priority>0.6</priority>
+  </url>
+</urlset>
