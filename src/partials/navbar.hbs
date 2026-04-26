@@ -1,0 +1,68 @@
+<nav class="fixed top-0 w-full z-50 h-16 md:h-20 transition-all duration-500 {{bgClass}}" id="navbar">
+    <div class="w-11/12 md:w-8/12 mx-auto flex justify-between text-white h-full items-center">
+        <a href="/"><img src="/diver_osint_ctf_logo_white.svg" alt="DIVER OSINT CTF" class="h-4 md:h-5"
+                width="233" height="20"></a>
+        <div class="flex items-center gap-4 md:gap-6 text-base md:text-xl">
+            <div>
+                {{#if (eq lang "en")}}
+                <a href="/" class="hover:underline">JP</a> | <span class="font-bold">EN</span>
+                {{else}}
+                <span class="font-bold">JP</span> | <a href="/en.html" class="hover:underline">EN</a>
+                {{/if}}
+            </div>
+            <button id="menu-open" type="button" aria-label="Open menu" aria-controls="menu-panel"
+                aria-expanded="false"
+                class="text-2xl md:text-3xl leading-none hover:opacity-80 transition-opacity cursor-pointer">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div id="menu-overlay"
+    class="fixed inset-0 z-[60] bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300"
+    aria-hidden="true"></div>
+<aside id="menu-panel" role="dialog" aria-modal="true" aria-label="Navigation"
+    class="fixed top-0 right-0 z-[70] h-full w-72 md:w-80 bg-diver-500 text-white translate-x-full transition-transform duration-300 ease-out flex flex-col">
+    <div class="flex justify-end p-4">
+        <button id="menu-close" type="button" aria-label="Close menu"
+            class="text-2xl leading-none hover:opacity-80 cursor-pointer">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <nav class="flex-1 px-6 pt-2 pb-8 overflow-y-auto">
+        <ul class="space-y-5 text-lg">
+            {{#if (eq lang "en")}}
+            <li><a href="/en.html" class="hover:underline">Home</a></li>
+            <li><a href="/vision.html" class="hover:underline">Vision</a></li>
+            <li><a href="/players_guide.html" class="hover:underline">Player's Guide</a></li>
+            <li><a href="/about_flags.html" class="hover:underline">Flag Submission Guide</a></li>
+            {{else}}
+            <li><a href="/" class="hover:underline">ホーム</a></li>
+            <li><a href="/vision.html" class="hover:underline">Vision</a></li>
+            <li><a href="/players_guide.html" class="hover:underline">プレイヤーズガイド</a></li>
+            <li><a href="/about_flags.html" class="hover:underline">Flagに関するガイド</a></li>
+            {{/if}}
+        </ul>
+    </nav>
+</aside>
+
+<script>
+    (function () {
+        const openBtn = document.getElementById('menu-open');
+        const closeBtn = document.getElementById('menu-close');
+        const panel = document.getElementById('menu-panel');
+        const overlay = document.getElementById('menu-overlay');
+        const setOpen = (v) => {
+            panel.classList.toggle('translate-x-full', !v);
+            overlay.classList.toggle('opacity-0', !v);
+            overlay.classList.toggle('pointer-events-none', !v);
+            openBtn.setAttribute('aria-expanded', String(v));
+            document.body.style.overflow = v ? 'hidden' : '';
+        };
+        openBtn.addEventListener('click', () => setOpen(true));
+        closeBtn.addEventListener('click', () => setOpen(false));
+        overlay.addEventListener('click', () => setOpen(false));
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
+    })();
+</script>

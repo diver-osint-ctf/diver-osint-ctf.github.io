@@ -40,15 +40,7 @@
     <!-- Main Content Container -->
     <div class="relative w-full flex flex-col items-center font-notosans-with-fallback">
         <!-- Navigation -->
-        <nav class="fixed top-0 w-full z-50 h-16 md:h-20 transition-all duration-500" id="navbar">
-            <div class="w-11/12 md:w-8/12 mx-auto flex justify-between text-white h-full items-center">
-                <a href="/"><img src="diver_osint_ctf_logo_white.svg" alt="DIVER OSINT CTF"
-                        class="h-4 md:h-5"></a>
-                <div class="text-base md:text-xl">
-                    <a href="/" class="hover:underline">JP</a> | <span class="font-bold">EN</span>
-                </div>
-            </div>
-        </nav>
+        {{> navbar}}
 
         <!-- Hero Section -->
         <section class="flex items-center justify-center h-[60vh] mt-16 md:mt-24 px-4 md:px-0">
